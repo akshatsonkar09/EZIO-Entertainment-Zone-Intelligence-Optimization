@@ -1,0 +1,166 @@
+{
+  "title": "Project Black Knight \u2014 Phase 5 Retrieval-Stage Observability and Diagnostics",
+  "benchmark_metadata": {
+    "total_queries": 113,
+    "positive_queries": 102,
+    "absence_queries": 11,
+    "total_targets": 11503
+  },
+  "summary_by_config": {
+    "architecture_a": {
+      "total_queries": 113,
+      "positive_queries": 102,
+      "absence_queries": 11,
+      "duplicate_result_rate": 0.0,
+      "hard_filter_violation_rate": 0.0,
+      "absence_metrics": {
+        "total_absence_queries": 11,
+        "correct_rejections": 11.0,
+        "rejection_rate": 1.0,
+        "false_acceptances": 0
+      },
+      "positive_ranking_metrics": {
+        "hit_rate_at_5": 0.7352941176470589,
+        "hit_rate_at_10": 0.7647058823529411,
+        "precision_at_5": 0.35490196078431374,
+        "precision_at_10": 0.2833333333333333,
+        "recall_at_5": 0.4689764353603055,
+        "recall_at_10": 0.5312651956505829,
+        "mrr": 0.642577030812325,
+        "ndcg_at_5": 0.6097568918689225,
+        "ndcg_at_10": 0.6228633396021155
+      }
+    },
+    "architecture_b": {
+      "total_queries": 113,
+      "positive_queries": 102,
+      "absence_queries": 11,
+      "duplicate_result_rate": 0.0,
+      "hard_filter_violation_rate": 0.0,
+      "absence_metrics": {
+        "total_absence_queries": 11,
+        "correct_rejections": 11.0,
+        "rejection_rate": 1.0,
+        "false_acceptances": 0
+      },
+      "positive_ranking_metrics": {
+        "hit_rate_at_5": 0.7352941176470589,
+        "hit_rate_at_10": 0.7549019607843137,
+        "precision_at_5": 0.35294117647058826,
+        "precision_at_10": 0.28137254901960784,
+        "recall_at_5": 0.4665254549681486,
+        "recall_at_10": 0.5239122544741124,
+        "mrr": 0.628688141923436,
+        "ndcg_at_5": 0.6015308682545992,
+        "ndcg_at_10": 0.6126335669918267
+      }
+    },
+    "rrf_only": {
+      "total_queries": 113,
+      "positive_queries": 102,
+      "absence_queries": 11,
+      "duplicate_result_rate": 0.0,
+      "hard_filter_violation_rate": 0.0,
+      "absence_metrics": {
+        "total_absence_queries": 11,
+        "correct_rejections": 11.0,
+        "rejection_rate": 1.0,
+        "false_acceptances": 0
+      },
+      "positive_ranking_metrics": {
+        "hit_rate_at_5": 0.7156862745098039,
+        "hit_rate_at_10": 0.7549019607843137,
+        "precision_at_5": 0.34705882352941175,
+        "precision_at_10": 0.27941176470588236,
+        "recall_at_5": 0.447734605294946,
+        "recall_at_10": 0.5157423198335894,
+        "mrr": 0.5953548085901027,
+        "ndcg_at_5": 0.5729617794602296,
+        "ndcg_at_10": 0.5875573451859856
+      }
+    }
+  },
+  "latency_summary": {
+    "architecture_a": {
+      "p50_ms": 893.2897999984561,
+      "mean_ms": 1161.0123017697945,
+      "p95_ms": 3230.03299999982,
+      "steady_state_mean_ms": 1165.5622705356043
+    },
+    "architecture_b": {
+      "p50_ms": 246.52710000009392,
+      "mean_ms": 597.4026805310679,
+      "p95_ms": 2568.7689800011863,
+      "steady_state_mean_ms": 601.2960196429568
+    },
+    "rrf_only": {
+      "p50_ms": 179.8374000027252,
+      "mean_ms": 216.9719522123393,
+      "p95_ms": 703.1757600016131,
+      "steady_state_mean_ms": 218.03919642853285
+    }
+  },
+  "failure_counts": {
+    "architecture_a": {
+      "total_failures": 11322,
+      "by_category": {
+        "dense_and_bm25_miss": 8370,
+        "metadata_filter_rejection": 1658,
+        "rank_cutoff_top10": 726,
+        "rrf_fusion_drop": 389,
+        "rank_cutoff_top5": 108,
+        "cross_encoder_demotion": 56,
+        "seed_self_exclusion": 15
+      },
+      "by_stage": {
+        "first_stage_retrieval": 8370,
+        "metadata_filtering": 1658,
+        "final_cutoff_top10": 726,
+        "rrf_fusion": 389,
+        "final_cutoff_top5": 108,
+        "cross_encoder_rerank": 56,
+        "seed_exclusion": 15
+      }
+    },
+    "architecture_b": {
+      "total_failures": 11323,
+      "by_category": {
+        "dense_and_bm25_miss": 8370,
+        "metadata_filter_rejection": 1658,
+        "rank_cutoff_top10": 766,
+        "rrf_fusion_drop": 389,
+        "rank_cutoff_top5": 107,
+        "cross_encoder_demotion": 18,
+        "seed_self_exclusion": 15
+      },
+      "by_stage": {
+        "first_stage_retrieval": 8370,
+        "metadata_filtering": 1658,
+        "final_cutoff_top10": 766,
+        "rrf_fusion": 389,
+        "final_cutoff_top5": 107,
+        "cross_encoder_rerank": 18,
+        "seed_exclusion": 15
+      }
+    },
+    "rrf_only": {
+      "total_failures": 11326,
+      "by_category": {
+        "dense_and_bm25_miss": 8370,
+        "metadata_filter_rejection": 1658,
+        "rank_cutoff_top10": 786,
+        "rrf_fusion_drop": 389,
+        "rank_cutoff_top5": 108,
+        "seed_self_exclusion": 15
+      },
+      "by_stage": {
+        "first_stage_retrieval": 8370,
+        "metadata_filtering": 1658,
+        "final_cutoff_top10": 786,
+        "rrf_fusion": 389,
+        "final_cutoff_top5": 108,
+        "seed_exclusion": 15
+      }
+    }
+  }
+}

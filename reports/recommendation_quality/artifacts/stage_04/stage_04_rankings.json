@@ -1,0 +1,106 @@
+[
+  {
+    "query_id": "KI_001",
+    "domain": "movie",
+    "intent": "mood_tone_discovery",
+    "query_text": "Find the movie The Dark Knight.",
+    "top_3_results": [
+      "The Dark Knight Rises",
+      "The Dark Knight",
+      "Batman: The Dark Knight Returns, Part 2"
+    ],
+    "hit@10": 1.0,
+    "mrr": 0.5,
+    "ndcg@10": 0.6309
+  },
+  {
+    "query_id": "KI_002",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Find Inception directed by Christopher Nolan.",
+    "top_3_results": [
+      "Inception"
+    ],
+    "hit@10": 1.0,
+    "mrr": 1.0,
+    "ndcg@10": 1.0
+  },
+  {
+    "query_id": "KI_003",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Show me the movie Pulp Fiction.",
+    "top_3_results": [
+      "Pulp Fiction"
+    ],
+    "hit@10": 1.0,
+    "mrr": 1.0,
+    "ndcg@10": 1.0
+  },
+  {
+    "query_id": "KI_004",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Find the film Titanic.",
+    "top_3_results": [
+      "Titanic",
+      "Raise the Titanic",
+      "The Chambermaid on the Titanic"
+    ],
+    "hit@10": 1.0,
+    "mrr": 1.0,
+    "ndcg@10": 1.0
+  },
+  {
+    "query_id": "KI_005",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Find the movie The Godfather.",
+    "top_3_results": [
+      "The Godfather: Part II",
+      "The Godfather: Part III",
+      "The Godfather"
+    ],
+    "hit@10": 1.0,
+    "mrr": 0.3333,
+    "ndcg@10": 0.5
+  },
+  {
+    "query_id": "KI_006",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Find the movie Gladiator.",
+    "top_3_results": [
+      "Gladiator"
+    ],
+    "hit@10": 1.0,
+    "mrr": 1.0,
+    "ndcg@10": 1.0
+  },
+  {
+    "query_id": "KI_007",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Find Mad Max: Fury Road.",
+    "top_3_results": [
+      "Mad Max: Fury Road"
+    ],
+    "hit@10": 1.0,
+    "mrr": 1.0,
+    "ndcg@10": 1.0
+  },
+  {
+    "query_id": "KI_008",
+    "domain": "movie",
+    "intent": "general_semantic",
+    "query_text": "Find the movie The Matrix.",
+    "top_3_results": [
+      "The Matrix",
+      "The Matrix Reloaded",
+      "The Matrix Revolutions"
+    ],
+    "hit@10": 1.0,
+    "mrr": 1.0,
+    "ndcg@10": 1.0
+  }
+]

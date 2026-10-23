@@ -1,0 +1,39 @@
+Day1 -> 
+
+I have started the project first I will create a basic movie recommender content based model and then will add and improve in layers
+
+using only tmbd basic movie datasets will add more later
+
+Preprocessing of datasets is done and stored as a Pickle datasets
+
+
+
+Day2 -> 
+Now going towards vectorization of tags
+
+Using cosine for similarity matrix and made the basic recommender function
+
+Problem encountered -> case sensitivity of searching words
+Solved using text normalization
+
+Basic recommender system is done but no evaluation model
+
+Day3 ->
+Fuzzy matching and saving important processed data
+
+Day4 -> Learning important topics like NLP and sentence transformers so that I can start building phase 2
+learnt a lot of NLP
+
+Day5-> Semantic Analysis recommender system working but accuracy is a bit compromised
+
+Day6 -> Working on to preprocess other datas like books using book crossing and was stuck on encoding problems and some foreign alphabets were not converted properly so they were printing rubbish letters.
+And added more data using google books api
+
+Day7 -> Realised that the dataset I was preprocessing is not good for my work so dropped it and the quantity of data I need I way too much to fetch using Google api free api limit so switched the dataset.
+Also dataset preprocessing for movies,songs,animes,books are complete
+And converted into vector embeddings as well
+
+Day8-> Implemented chromadb and different search retrievals methods into my system
+
+Day9-> Started integrating llm to get more structures query but the conversion of query and structure is taking a bit too long
+Gemini 3.6 is very unstable and lots of traffic so switched to gemini 3.5 flash-lite

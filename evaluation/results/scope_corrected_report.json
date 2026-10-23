@@ -1,0 +1,1547 @@
+{
+  "metadata": {
+    "scope": "In-Scope Unified Search Benchmark (SI_* excluded)",
+    "total_queries": 98,
+    "positive_queries": 87,
+    "absence_queries": 11,
+    "excluded_queries": 15,
+    "exclusion_reason": "Similar-to (SI_*) recommendation queries out of scope per product requirements"
+  },
+  "configurations": {
+    "architecture_b": {
+      "baseline": {
+        "mrr": 0.717,
+        "hit_at_1": 0.6437,
+        "hit_at_5": 0.8276,
+        "hit_at_10": 0.8506,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "experiment_1": {
+        "mrr": 0.7925,
+        "hit_at_1": 0.7471,
+        "hit_at_5": 0.8506,
+        "hit_at_10": 0.8621,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "delta": {
+        "mrr": 0.0755,
+        "hit_at_1": 0.1034,
+        "hit_at_5": 0.023,
+        "hit_at_10": 0.0115,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "by_category": {
+        "constraint": {
+          "query_count": 23,
+          "baseline": {
+            "mrr": 1.0,
+            "hit_at_1": 1.0,
+            "hit_at_5": 1.0,
+            "hit_at_10": 1.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 1.0,
+            "hit_at_1": 1.0,
+            "hit_at_5": 1.0,
+            "hit_at_10": 1.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "descriptive": {
+          "query_count": 23,
+          "baseline": {
+            "mrr": 0.708,
+            "hit_at_1": 0.5652,
+            "hit_at_5": 0.913,
+            "hit_at_10": 0.913,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.708,
+            "hit_at_1": 0.5652,
+            "hit_at_5": 0.913,
+            "hit_at_10": 0.913,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "known_item": {
+          "query_count": 30,
+          "baseline": {
+            "mrr": 0.7142,
+            "hit_at_1": 0.6333,
+            "hit_at_5": 0.8667,
+            "hit_at_10": 0.9,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.9333,
+            "hit_at_1": 0.9333,
+            "hit_at_5": 0.9333,
+            "hit_at_10": 0.9333,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.2191,
+            "hit_at_1": 0.3,
+            "hit_at_5": 0.0666,
+            "hit_at_10": 0.0333,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "multi_domain": {
+          "query_count": 11,
+          "baseline": {
+            "mrr": 0.1515,
+            "hit_at_1": 0.0909,
+            "hit_at_5": 0.1818,
+            "hit_at_10": 0.2727,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.1515,
+            "hit_at_1": 0.0909,
+            "hit_at_5": 0.1818,
+            "hit_at_10": 0.2727,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        }
+      },
+      "by_domain": {
+        "anime": {
+          "query_count": 30,
+          "baseline": {
+            "mrr": 0.582,
+            "hit_at_1": 0.5,
+            "hit_at_5": 0.7333,
+            "hit_at_10": 0.7667,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.74,
+            "hit_at_1": 0.7,
+            "hit_at_5": 0.8,
+            "hit_at_10": 0.8,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.158,
+            "hit_at_1": 0.2,
+            "hit_at_5": 0.0667,
+            "hit_at_10": 0.0333,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "book": {
+          "query_count": 28,
+          "baseline": {
+            "mrr": 0.7173,
+            "hit_at_1": 0.6429,
+            "hit_at_5": 0.8214,
+            "hit_at_10": 0.8214,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.7351,
+            "hit_at_1": 0.6786,
+            "hit_at_5": 0.8214,
+            "hit_at_10": 0.8214,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0178,
+            "hit_at_1": 0.0357,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "movie": {
+          "query_count": 29,
+          "baseline": {
+            "mrr": 0.8563,
+            "hit_at_1": 0.7931,
+            "hit_at_5": 0.931,
+            "hit_at_10": 0.9655,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.9023,
+            "hit_at_1": 0.8621,
+            "hit_at_5": 0.931,
+            "hit_at_10": 0.9655,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.046,
+            "hit_at_1": 0.069,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        }
+      }
+    },
+    "architecture_a": {
+      "baseline": {
+        "mrr": 0.7334,
+        "hit_at_1": 0.6667,
+        "hit_at_5": 0.8161,
+        "hit_at_10": 0.8506,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "experiment_1": {
+        "mrr": 0.8036,
+        "hit_at_1": 0.7701,
+        "hit_at_5": 0.8391,
+        "hit_at_10": 0.8506,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "delta": {
+        "mrr": 0.0702,
+        "hit_at_1": 0.1034,
+        "hit_at_5": 0.023,
+        "hit_at_10": 0.0,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "by_category": {
+        "constraint": {
+          "query_count": 23,
+          "baseline": {
+            "mrr": 1.0,
+            "hit_at_1": 1.0,
+            "hit_at_5": 1.0,
+            "hit_at_10": 1.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 1.0,
+            "hit_at_1": 1.0,
+            "hit_at_5": 1.0,
+            "hit_at_10": 1.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "descriptive": {
+          "query_count": 23,
+          "baseline": {
+            "mrr": 0.7935,
+            "hit_at_1": 0.6957,
+            "hit_at_5": 0.913,
+            "hit_at_10": 0.913,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.7935,
+            "hit_at_1": 0.6957,
+            "hit_at_5": 0.913,
+            "hit_at_10": 0.913,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "known_item": {
+          "query_count": 30,
+          "baseline": {
+            "mrr": 0.6964,
+            "hit_at_1": 0.6,
+            "hit_at_5": 0.8333,
+            "hit_at_10": 0.9,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.9,
+            "hit_at_1": 0.9,
+            "hit_at_5": 0.9,
+            "hit_at_10": 0.9,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.2036,
+            "hit_at_1": 0.3,
+            "hit_at_5": 0.0667,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "multi_domain": {
+          "query_count": 11,
+          "baseline": {
+            "mrr": 0.1515,
+            "hit_at_1": 0.0909,
+            "hit_at_5": 0.1818,
+            "hit_at_10": 0.2727,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.1515,
+            "hit_at_1": 0.0909,
+            "hit_at_5": 0.1818,
+            "hit_at_10": 0.2727,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        }
+      },
+      "by_domain": {
+        "anime": {
+          "query_count": 30,
+          "baseline": {
+            "mrr": 0.5909,
+            "hit_at_1": 0.5,
+            "hit_at_5": 0.7,
+            "hit_at_10": 0.7667,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.7333,
+            "hit_at_1": 0.7,
+            "hit_at_5": 0.7667,
+            "hit_at_10": 0.7667,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.1424,
+            "hit_at_1": 0.2,
+            "hit_at_5": 0.0667,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "book": {
+          "query_count": 28,
+          "baseline": {
+            "mrr": 0.7589,
+            "hit_at_1": 0.7143,
+            "hit_at_5": 0.8214,
+            "hit_at_10": 0.8214,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.7768,
+            "hit_at_1": 0.75,
+            "hit_at_5": 0.8214,
+            "hit_at_10": 0.8214,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0179,
+            "hit_at_1": 0.0357,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "movie": {
+          "query_count": 29,
+          "baseline": {
+            "mrr": 0.8563,
+            "hit_at_1": 0.7931,
+            "hit_at_5": 0.931,
+            "hit_at_10": 0.9655,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.9023,
+            "hit_at_1": 0.8621,
+            "hit_at_5": 0.931,
+            "hit_at_10": 0.9655,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.046,
+            "hit_at_1": 0.069,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        }
+      }
+    },
+    "rrf_only": {
+      "baseline": {
+        "mrr": 0.6779,
+        "hit_at_1": 0.5862,
+        "hit_at_5": 0.8046,
+        "hit_at_10": 0.8506,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "experiment_1": {
+        "mrr": 0.7688,
+        "hit_at_1": 0.7241,
+        "hit_at_5": 0.8276,
+        "hit_at_10": 0.8621,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "delta": {
+        "mrr": 0.0909,
+        "hit_at_1": 0.1379,
+        "hit_at_5": 0.023,
+        "hit_at_10": 0.0115,
+        "ndcg_at_5": 0.0,
+        "ndcg_at_10": 0.0
+      },
+      "by_category": {
+        "constraint": {
+          "query_count": 23,
+          "baseline": {
+            "mrr": 1.0,
+            "hit_at_1": 1.0,
+            "hit_at_5": 1.0,
+            "hit_at_10": 1.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 1.0,
+            "hit_at_1": 1.0,
+            "hit_at_5": 1.0,
+            "hit_at_10": 1.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "descriptive": {
+          "query_count": 23,
+          "baseline": {
+            "mrr": 0.6254,
+            "hit_at_1": 0.4783,
+            "hit_at_5": 0.8261,
+            "hit_at_10": 0.913,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.6254,
+            "hit_at_1": 0.4783,
+            "hit_at_5": 0.8261,
+            "hit_at_10": 0.913,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "known_item": {
+          "query_count": 30,
+          "baseline": {
+            "mrr": 0.6698,
+            "hit_at_1": 0.5333,
+            "hit_at_5": 0.8667,
+            "hit_at_10": 0.9,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.9333,
+            "hit_at_1": 0.9333,
+            "hit_at_5": 0.9333,
+            "hit_at_10": 0.9333,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.2635,
+            "hit_at_1": 0.4,
+            "hit_at_5": 0.0666,
+            "hit_at_10": 0.0333,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "multi_domain": {
+          "query_count": 11,
+          "baseline": {
+            "mrr": 0.1364,
+            "hit_at_1": 0.0909,
+            "hit_at_5": 0.1818,
+            "hit_at_10": 0.2727,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.1364,
+            "hit_at_1": 0.0909,
+            "hit_at_5": 0.1818,
+            "hit_at_10": 0.2727,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0,
+            "hit_at_1": 0.0,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        }
+      },
+      "by_domain": {
+        "anime": {
+          "query_count": 30,
+          "baseline": {
+            "mrr": 0.582,
+            "hit_at_1": 0.5,
+            "hit_at_5": 0.7333,
+            "hit_at_10": 0.7667,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.74,
+            "hit_at_1": 0.7,
+            "hit_at_5": 0.8,
+            "hit_at_10": 0.8,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.158,
+            "hit_at_1": 0.2,
+            "hit_at_5": 0.0667,
+            "hit_at_10": 0.0333,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "book": {
+          "query_count": 28,
+          "baseline": {
+            "mrr": 0.7113,
+            "hit_at_1": 0.6429,
+            "hit_at_5": 0.8214,
+            "hit_at_10": 0.8214,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.7292,
+            "hit_at_1": 0.6786,
+            "hit_at_5": 0.8214,
+            "hit_at_10": 0.8214,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.0179,
+            "hit_at_1": 0.0357,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        },
+        "movie": {
+          "query_count": 29,
+          "baseline": {
+            "mrr": 0.7448,
+            "hit_at_1": 0.6207,
+            "hit_at_5": 0.8621,
+            "hit_at_10": 0.9655,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "experiment_1": {
+            "mrr": 0.8368,
+            "hit_at_1": 0.7931,
+            "hit_at_5": 0.8621,
+            "hit_at_10": 0.9655,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          },
+          "delta": {
+            "mrr": 0.092,
+            "hit_at_1": 0.1724,
+            "hit_at_5": 0.0,
+            "hit_at_10": 0.0,
+            "ndcg_at_5": 0.0,
+            "ndcg_at_10": 0.0
+          }
+        }
+      }
+    }
+  },
+  "correctness": {
+    "hard_filter_violations": 0,
+    "absence_false_acceptances": 0,
+    "duplicate_results": 0,
+    "absence_queries_count": 11
+  },
+  "per_query_comparison": [
+    {
+      "query_id": "KI_001",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 0.3333333333333333,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.6667,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_002",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_003",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_004",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_005",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 0.3333333333333333,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.6667,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_006",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_007",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_008",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_009",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_010",
+      "category": "known_item",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_011",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_012",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.2,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.8,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_013",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.14285714285714285,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.8571,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_014",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_015",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.3333333333333333,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.6667,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_016",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_017",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.3333333333333333,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.6667,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_018",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 1.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_019",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_020",
+      "category": "known_item",
+      "domain": "anime",
+      "baseline_mrr_b": 0.25,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.75,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_021",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_022",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_023",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_024",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_025",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.5,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_026",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_027",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_028",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_029",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "KI_030",
+      "category": "known_item",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_001",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_002",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_003",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_004",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 0.5,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_005",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 0.5,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_006",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_007",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_008",
+      "category": "descriptive",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_009",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_010",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_011",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_012",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_013",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_014",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 0.5,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_015",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 0.2,
+      "exp1_mrr_b": 0.2,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_016",
+      "category": "descriptive",
+      "domain": "anime",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 0.5,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_017",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 0.25,
+      "exp1_mrr_b": 0.25,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_018",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 0.3333333333333333,
+      "exp1_mrr_b": 0.3333333333333333,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_019",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_020",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_021",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_022",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 0.5,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "DE_023",
+      "category": "descriptive",
+      "domain": "book",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_001",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_002",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_003",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_004",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_005",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_006",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_007",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_008",
+      "category": "constraint",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_009",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_010",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_011",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_012",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_013",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_014",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_015",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_016",
+      "category": "constraint",
+      "domain": "anime",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_017",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_018",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_019",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_020",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_021",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_022",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "CO_023",
+      "category": "constraint",
+      "domain": "book",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_001",
+      "category": "multi_domain",
+      "domain": "movie",
+      "baseline_mrr_b": 1.0,
+      "exp1_mrr_b": 1.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_002",
+      "category": "multi_domain",
+      "domain": "movie",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_003",
+      "category": "multi_domain",
+      "domain": "movie",
+      "baseline_mrr_b": 0.16666666666666666,
+      "exp1_mrr_b": 0.16666666666666666,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_004",
+      "category": "multi_domain",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_005",
+      "category": "multi_domain",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_006",
+      "category": "multi_domain",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_007",
+      "category": "multi_domain",
+      "domain": "anime",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_008",
+      "category": "multi_domain",
+      "domain": "book",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_009",
+      "category": "multi_domain",
+      "domain": "book",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_010",
+      "category": "multi_domain",
+      "domain": "book",
+      "baseline_mrr_b": 0.0,
+      "exp1_mrr_b": 0.0,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    },
+    {
+      "query_id": "MD_011",
+      "category": "multi_domain",
+      "domain": "book",
+      "baseline_mrr_b": 0.5,
+      "exp1_mrr_b": 0.5,
+      "mrr_delta": 0.0,
+      "baseline_rank": null,
+      "exp1_rank": null
+    }
+  ]
+}

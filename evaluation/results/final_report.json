@@ -1,0 +1,211 @@
+{
+  "project_name": "Project Black Knight",
+  "phase": 5,
+  "report_title": "Final Regression and System Evaluation Report",
+  "generated_at": "2026-10-19T06:41:00Z",
+  "executive_summary": {
+    "system_status": "FUNCTIONAL_EVALUATION_COMPLETE",
+    "readiness_assessment": "BETA / PILOT READY (Core retrieval, reranking, filtering, and parser caching verified; catalog coverage and tag enrichment required before production release)",
+    "total_unit_tests": 45,
+    "tests_passed": 45,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "tests_blocked": 0,
+    "live_api_calls_in_evaluation": 0,
+    "offline_reproducibility": "100% verified (no external API keys required for test suite or evaluation runs)"
+  },
+  "dataset_audit": {
+    "movie": {
+      "collection": "movies",
+      "row_count": 4805,
+      "source_files": [
+        "data/processed/movies1234.pkl",
+        "data/processed/movie_metadata_clean.csv"
+      ],
+      "alignment": "1-to-1 verified between ChromaDB collection and clean metadata"
+    },
+    "anime": {
+      "collection": "animes",
+      "row_count": 18336,
+      "source_files": [
+        "data/processed/anime_metadata_clean.csv"
+      ],
+      "alignment": "1-to-1 verified"
+    },
+    "book": {
+      "collection": "books",
+      "row_count": 11230,
+      "source_files": [
+        "data/processed/book_metadata_clean.csv"
+      ],
+      "alignment": "1-to-1 verified"
+    },
+    "music": {
+      "collection": "music",
+      "row_count": 32828,
+      "source_files": [
+        "data/processed/music_metadata_clean.csv"
+      ],
+      "alignment": "1-to-1 verified"
+    }
+  },
+  "phase_summaries": {
+    "phase_1_baseline_audit": {
+      "status": "PASSED",
+      "key_accomplishments": [
+        "Discovered 4,806 vs 4,805 row discrepancy between movies.pkl and movie_metadata_clean.csv; established movies1234.pkl as canonical aligned dataset.",
+        "Verified ChromaDB persistent storage at data/chroma_db containing all 4 entertainment collections.",
+        "Established baseline pytest suite with 4 passing schema and integrity tests."
+      ]
+    },
+    "phase_2_query_parser_evaluation": {
+      "status": "PASSED",
+      "benchmark_size": 40,
+      "metrics": {
+        "schema_validation_failure_rate": 0.0,
+        "strict_exact_match_rate": 0.35,
+        "normalized_match_rate": 0.575,
+        "domain_normalized_rates": {
+          "anime": 0.80,
+          "movie": 0.70,
+          "book": 0.60,
+          "music": 0.20
+        }
+      },
+      "api_usage": {
+        "live_api_calls": 0,
+        "cache_hits": 40,
+        "cache_fingerprint": "1b734d85dec74384"
+      },
+      "fixes_implemented": [
+        "Fixed module-level Groq client instantiation crash when GROQ_API_KEY is not set.",
+        "Added parser evaluation runner with deterministic cache fingerprinting and semantic ordering."
+      ]
+    },
+    "phase_3_metadata_filtering": {
+      "status": "PASSED",
+      "tests_added": 12,
+      "fixes_implemented": [
+        "Resolved TypeError when comparing string values against numeric boundaries (e.g. Goodreads page counts).",
+        "Enforced strict exclusion of missing/null values under active constraints.",
+        "Implemented TMDB cast and director concatenated name normalization (e.g., 'JamesCameron' vs 'James Cameron').",
+        "Implemented ISBN token normalization and Spotify duration unit conversions.",
+        "Added boundary-inclusive numeric filtering with type safety across all domains."
+      ]
+    },
+    "phase_4_hybrid_retrieval_and_ranking": {
+      "status": "PASSED",
+      "tests_added": 13,
+      "architecture": {
+        "dense_encoder": "SentenceTransformers (all-MiniLM-L6-v2)",
+        "vector_index": "ChromaDB persistent collections",
+        "lexical_index": "BM25Okapi (rank_bm25)",
+        "fusion": "Reciprocal Rank Fusion (RRF, k=60)",
+        "reranker": "CrossEncoder (cross-encoder/ms-marco-MiniLM-L-6-v2)",
+        "pre_filtering": "Direct vector dot-product scoring for selective candidate sets (len <= 250)"
+      },
+      "ranking_metrics_positive_queries": {
+        "queries_evaluated": 11,
+        "dense_only": {
+          "hit_rate_at_5": 0.2727,
+          "precision_at_5": 0.1455,
+          "recall_at_5": 0.2323,
+          "mrr": 0.2045,
+          "ndcg_at_5": 0.2274
+        },
+        "bm25_only": {
+          "hit_rate_at_5": 0.1818,
+          "precision_at_5": 0.1273,
+          "recall_at_5": 0.1414,
+          "mrr": 0.1136,
+          "ndcg_at_5": 0.1365
+        },
+        "rrf_hybrid": {
+          "hit_rate_at_5": 0.2727,
+          "precision_at_5": 0.1455,
+          "recall_at_5": 0.2323,
+          "mrr": 0.2045,
+          "ndcg_at_5": 0.2274
+        },
+        "cross_encoder_reranked": {
+          "hit_rate_at_5": 0.6364,
+          "precision_at_5": 0.3636,
+          "recall_at_5": 0.5960,
+          "mrr": 0.5682,
+          "ndcg_at_5": 0.5910
+        }
+      },
+      "absence_query_detection": {
+        "queries_evaluated": 1,
+        "correct_rejection_rate": 1.0000
+      }
+    }
+  },
+  "caveat_investigation": {
+    "identical_dense_and_rrf_metrics": {
+      "investigation_result": "CONFIRMED_LEGITIMATE_BENCHMARK_PHENOMENON",
+      "explanation": "BM25 and Dense retrieval produced different candidate sets in 7 of the 12 queries, and RRF altered candidate rankings accordingly. However, on the 12-query benchmark, for queries where relevant items were found (MOV_003, ANI_001, MUS_002), both Dense and RRF placed the targets at the identical top positions (#1, #4-#5, and top 5 respectively). For queries where the relevant targets were outside top-K, both scored 0.0. The metrics diverged significantly only upon Cross-Encoder reranking."
+    },
+    "absence_query_handling": {
+      "investigation_result": "METRIC_DEFINITION_REFINED",
+      "explanation": "Previously, correct empty returns on negative queries (RET_BOOK_002) were credited as positive hits. In Phase 5, absence detection is decoupled from positive ranking metrics, reporting Correct Rejection Rate (1.0 = 100%) with an explicit positive query denominator of N=11."
+    },
+    "benchmark_scope": {
+      "investigation_result": "DIAGNOSTIC_SAMPLE_NOT_EXHAUSTIVE",
+      "explanation": "The 12-query retrieval benchmark covers representative scenarios across all media types, but is a targeted regression set rather than an exhaustive statistical evaluation."
+    }
+  },
+  "defect_classification": [
+    {
+      "id": "DEF-001",
+      "title": "Movie title omitted from original preprocessing tags",
+      "category": "DATA_LIMITATION",
+      "impact": "Unconstrained BM25 and raw dense retrieval struggle with exact movie title keywords unless metadata filtering or selective vector scoring is triggered.",
+      "mitigation_status": "MITIGATED: search_black_knight extracts title into metadata filter, enabling selective direct vector scoring on valid_ids.",
+      "recommended_fix": "Prepend film title to tag column in future index rebuilding."
+    },
+    {
+      "id": "DEF-002",
+      "title": "Missing popular catalog items (e.g. Paulo Coelho's The Alchemist)",
+      "category": "DATA_LIMITATION",
+      "impact": "Queries for popular works absent from the 11k Goodreads sample return 0 items.",
+      "mitigation_status": "MITIGATED: Absence detection returns clean empty results without hallucinating irrelevant items.",
+      "recommended_fix": "Ingest complete open-library or larger Goodreads dumps in future expansions."
+    },
+    {
+      "id": "DEF-003",
+      "title": "Sparse book character metadata",
+      "category": "DATA_LIMITATION",
+      "impact": "Filtering by secondary characters is limited by metadata nulls.",
+      "mitigation_status": "CONFIRMED: Filter safely excludes rows where character metadata is null.",
+      "recommended_fix": "Enrich book dataset using Wikidata entity linkage."
+    },
+    {
+      "id": "DEF-004",
+      "title": "Missing anime ranking / popularity values in raw dataset",
+      "category": "DATA_LIMITATION",
+      "impact": "Unranked or newly aired anime lack ranking values.",
+      "mitigation_status": "CONFIRMED: Handled via null-safe numeric boundary checks.",
+      "recommended_fix": "Periodic sync with MyAnimeList / AniList APIs."
+    },
+    {
+      "id": "DEF-005",
+      "title": "Music genre routing misalignment in query parser",
+      "category": "PARSER_FEATURE_GAP",
+      "impact": "Parser normalized match rate for music is 20% due to playlist_genre vs playlist_subgenre routing differences.",
+      "mitigation_status": "DOCUMENTED: Metadata filter supports cross-matching across genre and subgenre.",
+      "recommended_fix": "Update system prompt with Spotify genre taxonomy few-shot examples."
+    }
+  ],
+  "reproduction_commands": {
+    "run_full_test_suite": "$env:PYTHONPATH='src'; .\\project_black_knight\\Scripts\\python.exe -m pytest tests/ -v",
+    "run_parser_evaluation": "$env:PYTHONPATH='src'; .\\project_black_knight\\Scripts\\python.exe evaluation/run_evaluation.py --mode cached",
+    "run_retrieval_evaluation": "$env:PYTHONPATH='src'; .\\project_black_knight\\Scripts\\python.exe evaluation/run_retrieval_evaluation.py"
+  },
+  "prioritized_next_steps": [
+    "Phase 6: Production API Endpoints & FastAPI Service Integration",
+    "Phase 7: End-to-End Search UI and Interactive Query Suggestion",
+    "Phase 8: Offline Vector Index Re-embedding with Prepend Titles",
+    "Phase 9: Parser Music Few-Shot Tuning for Spotify Taxonomy"
+  ]
+}

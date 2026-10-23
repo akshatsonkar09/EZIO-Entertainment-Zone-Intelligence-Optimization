@@ -1,0 +1,62 @@
+{
+  "movie": [
+    {
+      "id": "movie_0",
+      "title": "Avatar",
+      "v1_legacy": "action adventure fantasy sciencefiction cultureclash future spacewar spacecolony society spacetravel futuristic romance space alien tribe alienplanet cgi marine soldier battle loveaffair antiwar powerrelations mindandsoul 3d in the 22nd century, a pa...",
+      "v2_structured": "title: avatar director: jamescameron cast: samworthington zoesaldana sigourneyweaver genres: action adventure fantasy sciencefiction year: 2009 themes: cultureclash future spacewar spacecolony society spacetravel futuristic romance space alien tribe ..."
+    },
+    {
+      "id": "movie_1",
+      "title": "Pirates of the Caribbean: At World's End",
+      "v1_legacy": "adventure fantasy action ocean drugabuse exoticisland eastindiatradingcompany loveofone'slife traitor shipwreck strongwoman ship alliance calypso afterlife fighter pirate swashbuckler aftercreditsstinger captain barbossa, long believed to be dead, ha...",
+      "v2_structured": "title: pirates of the caribbean: at world's end director: goreverbinski cast: johnnydepp orlandobloom keiraknightley genres: adventure fantasy action year: 2007 themes: ocean drugabuse exoticisland eastindiatradingcompany loveofone'slife traitor ship..."
+    },
+    {
+      "id": "movie_2",
+      "title": "Spectre",
+      "v1_legacy": "action adventure crime spy basedonnovel secretagent sequel mi6 britishsecretservice unitedkingdom a cryptic message from bond\u2019s past sends him on a trail to uncover a sinister organization. while m battles political forces to keep the secret service ...",
+      "v2_structured": "title: spectre director: sammendes cast: danielcraig christophwaltz l\u00e9aseydoux genres: action adventure crime year: 2015 themes: spy basedonnovel secretagent sequel mi6 britishsecretservice unitedkingdom synopsis: a cryptic message from bond\u2019s past s..."
+    }
+  ],
+  "anime": [
+    {
+      "id": "anime_0",
+      "title": "Haikyuu!! Second Season",
+      "v1_legacy": "title: haikyuu!! second season genres: comedy sports drama school shounen synopsis: following their participation at the inter-high, the karasuno high school volleyball team attempts to refocus their efforts, aiming to conquer the spring tournament i...",
+      "v2_structured": "title: haikyuu!! second season genres: comedy sports drama school shounen year: 2015.0 episodes: 25 status: top-tier acclaimed synopsis: following their participation at the inter-high, the karasuno high school volleyball team attempts to refocus the..."
+    },
+    {
+      "id": "anime_1",
+      "title": "Shigatsu wa Kimi no Uso",
+      "v1_legacy": "title: shigatsu wa kimi no uso genres: drama music romance school shounen synopsis: music accompanies the path of the human metronome, the prodigious pianist kousei arima. but after the passing of his mother, saki arima, kousei falls into a downward ...",
+      "v2_structured": "title: shigatsu wa kimi no uso genres: drama music romance school shounen year: 2014.0 episodes: 22 status: top-tier acclaimed synopsis: music accompanies the path of the human metronome, the prodigious pianist kousei arima. but after the passing of ..."
+    },
+    {
+      "id": "anime_2",
+      "title": "Made in Abyss",
+      "v1_legacy": "title: made in abyss genres: sci-fi adventure mystery drama fantasy synopsis: the abyss\u2014a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. how did it come to be? what lies a...",
+      "v2_structured": "title: made in abyss genres: sci-fi adventure mystery drama fantasy year: 2017.0 episodes: 13 status: top-tier acclaimed synopsis: the abyss\u2014a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from..."
+    }
+  ],
+  "book": [
+    {
+      "id": "book_0",
+      "title": "The Darkest Room",
+      "v1_legacy": "title: the darkest room author: johan theorin genres: mystery, crime, thriller, fiction, scandinavian literature, sweden, swedish literature, horror, nordic noir, suspense description: 'the dead are our neighbours everywhere on the island, and you ha...",
+      "v2_structured": "title: the darkest room author: johan theorin genres: mystery crime thriller fiction scandinavian literature sweden swedish literature horror nordic noir suspense synopsis: 'the dead are our neighbours everywhere on the island, and you have to get us..."
+    },
+    {
+      "id": "book_1",
+      "title": "Coyote Blue",
+      "v1_legacy": "title: coyote blue author: christopher moore (goodreads author) genres: fiction, humor, fantasy, comedy, urban fantasy, mythology, adult, adventure, adult fiction, novels description: from christopher moore, author of fluke, comes a quirky, irreveren...",
+      "v2_structured": "title: coyote blue author: christopher moore (goodreads author) genres: fiction humor fantasy comedy urban fantasy mythology adult adventure adult fiction novels synopsis: from christopher moore, author of fluke, comes a quirky, irreverent novel of l..."
+    },
+    {
+      "id": "book_2",
+      "title": "The Gift of the Magi",
+      "v1_legacy": "title: the gift of the magi author: o. henry, lisbeth zwerger (illustrator) genres: classics, short stories, fiction, christmas, romance, literature, holiday, young adult, school, picture books description: one dollar and eighty-seven cents is all th...",
+      "v2_structured": "title: the gift of the magi author: o. henry, lisbeth zwerger (illustrator) genres: classics short stories fiction christmas romance literature holiday young adult school picture books characters: jim della length: novella short read synopsis: one do..."
+    }
+  ]
+}

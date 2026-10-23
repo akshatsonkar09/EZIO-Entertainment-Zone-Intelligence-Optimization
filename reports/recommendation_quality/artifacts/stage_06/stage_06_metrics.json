@@ -1,0 +1,208 @@
+{
+  "benchmark_version": "v2.0_graded_relevance",
+  "total_queries": 30,
+  "architectures": {
+    "domain_routed": {
+      "overall": {
+        "query_count": 30,
+        "hit@5": 0.4,
+        "hit@10": 0.5,
+        "mrr": 0.295,
+        "ndcg@10": 0.2532,
+        "seed_leak_rate": 0.0,
+        "mean_latency_ms": 1476.58,
+        "median_latency_ms": 337.99,
+        "violations_count": 0
+      },
+      "by_domain": {
+        "movie": {
+          "count": 10,
+          "hit@5": 0.4,
+          "hit@10": 0.6,
+          "mrr": 0.31,
+          "ndcg@10": 0.234
+        },
+        "anime": {
+          "count": 10,
+          "hit@5": 0.2,
+          "hit@10": 0.2,
+          "mrr": 0.2,
+          "ndcg@10": 0.12
+        },
+        "book": {
+          "count": 10,
+          "hit@5": 0.6,
+          "hit@10": 0.7,
+          "mrr": 0.375,
+          "ndcg@10": 0.4056
+        }
+      },
+      "by_intent": {
+        "reference_similarity": {
+          "count": 6,
+          "hit@10": 0.1667,
+          "mrr": 0.0278,
+          "ndcg@10": 0.0467
+        },
+        "reference_similarity_alias": {
+          "count": 2,
+          "hit@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0
+        },
+        "mood_tone_discovery": {
+          "count": 3,
+          "hit@10": 1.0,
+          "mrr": 0.8333,
+          "ndcg@10": 0.5696
+        },
+        "genre_discovery": {
+          "count": 8,
+          "hit@10": 0.75,
+          "mrr": 0.5938,
+          "ndcg@10": 0.4091
+        },
+        "metadata_constraints": {
+          "count": 5,
+          "hit@10": 0.8,
+          "mrr": 0.2667,
+          "ndcg@10": 0.4281
+        },
+        "mixed_intent": {
+          "count": 3,
+          "hit@10": 0.3333,
+          "mrr": 0.0333,
+          "ndcg@10": 0.0649
+        },
+        "difficult_negatives": {
+          "count": 3,
+          "hit@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0
+        }
+      }
+    },
+    "all_cross_encoder": {
+      "overall": {
+        "query_count": 30,
+        "hit@5": 0.4333,
+        "hit@10": 0.5333,
+        "mrr": 0.2915,
+        "ndcg@10": 0.2718,
+        "seed_leak_rate": 0.0,
+        "mean_latency_ms": 1711.14,
+        "median_latency_ms": 1723.98,
+        "violations_count": 0
+      },
+      "by_domain": {
+        "movie": {
+          "count": 10,
+          "hit@5": 0.4,
+          "hit@10": 0.6,
+          "mrr": 0.31,
+          "ndcg@10": 0.234
+        },
+        "anime": {
+          "count": 10,
+          "hit@5": 0.2,
+          "hit@10": 0.3,
+          "mrr": 0.0694,
+          "ndcg@10": 0.0857
+        },
+        "book": {
+          "count": 10,
+          "hit@5": 0.7,
+          "hit@10": 0.7,
+          "mrr": 0.495,
+          "ndcg@10": 0.4956
+        }
+      },
+      "by_intent": {
+        "reference_similarity": {
+          "count": 6,
+          "hit@10": 0.1667,
+          "mrr": 0.0333,
+          "ndcg@10": 0.0508
+        },
+        "reference_similarity_alias": {
+          "count": 2,
+          "hit@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0
+        },
+        "mood_tone_discovery": {
+          "count": 3,
+          "hit@10": 1.0,
+          "mrr": 0.6111,
+          "ndcg@10": 0.4914
+        },
+        "genre_discovery": {
+          "count": 8,
+          "hit@10": 0.875,
+          "mrr": 0.6076,
+          "ndcg@10": 0.4675
+        },
+        "metadata_constraints": {
+          "count": 5,
+          "hit@10": 0.8,
+          "mrr": 0.35,
+          "ndcg@10": 0.4881
+        },
+        "mixed_intent": {
+          "count": 3,
+          "hit@10": 0.3333,
+          "mrr": 0.0333,
+          "ndcg@10": 0.0649
+        },
+        "difficult_negatives": {
+          "count": 3,
+          "hit@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0
+        }
+      }
+    }
+  },
+  "ablation_study": {
+    "Config 0: Legacy Baseline (v1 tags, k=60, no intent rerank)": {
+      "hit@5": 0.4333,
+      "hit@10": 0.5,
+      "mrr": 0.2733,
+      "ndcg@10": 0.2515,
+      "seed_leak_rate": 0.0,
+      "mean_latency_ms": 546.11
+    },
+    "Config 1: Stage 1 (Ref similarity & seed exclusion fix)": {
+      "hit@5": 0.4333,
+      "hit@10": 0.5,
+      "mrr": 0.2733,
+      "ndcg@10": 0.2515,
+      "seed_leak_rate": 0.0,
+      "mean_latency_ms": 483.63
+    },
+    "Config 2: Stage 2 (+ Structured v2 item representations)": {
+      "hit@5": 0.4,
+      "hit@10": 0.5,
+      "mrr": 0.2792,
+      "ndcg@10": 0.2481,
+      "seed_leak_rate": 0.0,
+      "mean_latency_ms": 502.8
+    },
+    "Config 3: Stage 3 (+ Candidate retrieval depth k=80)": {
+      "hit@5": 0.4,
+      "hit@10": 0.5,
+      "mrr": 0.2792,
+      "ndcg@10": 0.2481,
+      "seed_leak_rate": 0.0,
+      "mean_latency_ms": 578.18
+    },
+    "Config 4: Stage 4/Final (+ Intent-aware reranking)": {
+      "hit@5": 0.4,
+      "hit@10": 0.5,
+      "mrr": 0.295,
+      "ndcg@10": 0.2532,
+      "seed_leak_rate": 0.0,
+      "mean_latency_ms": 580.76
+    }
+  }
+}

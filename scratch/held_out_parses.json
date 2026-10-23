@@ -1,0 +1,2583 @@
+{
+  "HT_KI_001": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "Whiplash",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Whiplash",
+    "similar_to": []
+  },
+  "HT_KI_002": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "The Prestige",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "The Prestige",
+    "similar_to": []
+  },
+  "HT_KI_003": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "Memento",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Memento",
+    "similar_to": []
+  },
+  "HT_KI_004": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "The Truman Show",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "The Truman Show",
+    "similar_to": []
+  },
+  "HT_KI_005": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "Pan's Labyrinth",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Pan's Labyrinth",
+    "similar_to": []
+  },
+  "HT_KI_006": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "Gattaca",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Gattaca",
+    "similar_to": []
+  },
+  "HT_KI_007": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "Fight Club",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Fight Club",
+    "similar_to": []
+  },
+  "HT_KI_008": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": "Blade Runner",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Blade Runner",
+    "similar_to": []
+  },
+  "HT_KI_009": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Psycho-Pass",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Psycho-Pass",
+    "similar_to": []
+  },
+  "HT_KI_010": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Vinland Saga",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Vinland Saga",
+    "similar_to": []
+  },
+  "HT_KI_011": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Mushishi",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Mushishi",
+    "similar_to": []
+  },
+  "HT_KI_012": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Monster",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Monster",
+    "similar_to": []
+  },
+  "HT_KI_013": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Fate/Zero",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Fate/Zero",
+    "similar_to": []
+  },
+  "HT_KI_014": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Steins;Gate 0",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Steins;Gate 0",
+    "similar_to": []
+  },
+  "HT_KI_015": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Hyouka",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Hyouka",
+    "similar_to": []
+  },
+  "HT_KI_016": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": "Toradora!",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Toradora!",
+    "similar_to": []
+  },
+  "HT_KI_017": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "The Crying of Lot 49",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "The Crying of Lot 49",
+    "similar_to": []
+  },
+  "HT_KI_018": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "All the King's Men",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "All the King's Men",
+    "similar_to": []
+  },
+  "HT_KI_019": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "The Midnight Line",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "The Midnight Line",
+    "similar_to": []
+  },
+  "HT_KI_020": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "First King of Shannara",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "First King of Shannara",
+    "similar_to": []
+  },
+  "HT_KI_021": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "The Gift of the Magi",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "The Gift of the Magi",
+    "similar_to": []
+  },
+  "HT_KI_022": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "Every Dead Thing",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Every Dead Thing",
+    "similar_to": []
+  },
+  "HT_KI_023": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "CivilWarLand in Bad Decline",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "CivilWarLand in Bad Decline",
+    "similar_to": []
+  },
+  "HT_KI_024": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "Speak",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Speak",
+    "similar_to": []
+  },
+  "HT_KI_025": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": "Coyote Blue",
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Coyote Blue",
+    "similar_to": []
+  },
+  "HT_DQ_001": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "An insurance investigator with anterograde amnesia uses polaroids and tattoos to hunt his wife's killer.",
+    "similar_to": []
+  },
+  "HT_DQ_002": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "An ambitious young jazz drummer is pushed to his psychological limits by a ruthless music conservatory instructor.",
+    "similar_to": []
+  },
+  "HT_DQ_003": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "A man discovers his entire life is an unscripted 24-hour reality television broadcast filmed on an enormous domed set.",
+    "similar_to": []
+  },
+  "HT_DQ_004": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Two rival stage magicians in Victorian London engage in a competitive obsession to perform the ultimate teleportation illusion.",
+    "similar_to": []
+  },
+  "HT_DQ_005": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "In 1944 post-Civil War Spain, a young girl escapes her cruel stepfather into an ancient mythical underworld labyrinth.",
+    "similar_to": []
+  },
+  "HT_DQ_006": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "In a future society driven by genetic determinism, an in-valid man assumes the identity of a paralyzed athlete to travel into space.",
+    "similar_to": []
+  },
+  "HT_DQ_007": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "An insomniac office worker forms an underground combat club with a charismatic soap salesman.",
+    "similar_to": []
+  },
+  "HT_DQ_008": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "A cynical blade runner cop is assigned to track down and retire four rogue replicants who returned to Earth.",
+    "similar_to": []
+  },
+  "HT_DQ_009": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "A futuristic society where the Sibyl System continuously quantifies mental states and criminal intent using Dominator weapons.",
+    "similar_to": []
+  },
+  "HT_DQ_010": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "A young Icelandic warrior joins a band of Viking mercenaries seeking vengeance against the leader who killed his father.",
+    "similar_to": []
+  },
+  "HT_DQ_011": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "A wandering traveler studies primitive lifeforms that exist alongside humans, curing bizarre spiritual afflictions.",
+    "similar_to": []
+  },
+  "HT_DQ_012": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "A brilliant brain surgeon in Germany saves the life of a young boy who grows up to be a charismatic psychopathic killer.",
+    "similar_to": []
+  },
+  "HT_DQ_013": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Seven mages summon legendary heroic spirits to fight in a secret battle royale in Fuyuki City for a wish-granting relic.",
+    "similar_to": []
+  },
+  "HT_DQ_014": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "An eccentric scientist suffers from PTSD and depression after failing to save the woman he loved across multiple world lines.",
+    "similar_to": []
+  },
+  "HT_DQ_015": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "An energy-conserving high school boy joins the Classic Literature Club and solves everyday campus mysteries.",
+    "similar_to": []
+  },
+  "HT_DQ_016": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "A gentle high school boy with an intimidating delinquent face forms an unlikely alliance with a tiny, fierce palmtop tiger girl.",
+    "similar_to": []
+  },
+  "HT_DQ_017": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A woman named Oedipa Maas uncovers what may be a centuries-old underground postal conspiracy called the Tristero.",
+    "similar_to": []
+  },
+  "HT_DQ_018": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "The political rise and moral corruption of a ruthless Southern governor named Willie Stark observed by his cynical aide.",
+    "similar_to": []
+  },
+  "HT_DQ_019": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A nomadic ex-military investigator spots a tiny West Point graduation ring in a pawn shop and uncovers a missing soldier mystery.",
+    "similar_to": []
+  },
+  "HT_DQ_020": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A Druid named Bremen struggles to unite the Four Lands against the emerging threat of the demonic Warlock Lord.",
+    "similar_to": []
+  },
+  "HT_DQ_021": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A young impoverished couple secretly sacrifice their most precious possessions to buy Christmas gifts for each other.",
+    "similar_to": []
+  },
+  "HT_DQ_022": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A former NYPD detective turned private investigator investigates brutal serial killings that lead back to his own dark past.",
+    "similar_to": []
+  },
+  "HT_DQ_023": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A dystopian satire set in a bizarre historical theme park where genetically altered monsters and disillusioned workers clash.",
+    "similar_to": []
+  },
+  "HT_DQ_024": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A traumatized high school freshman becomes selectively mute after calling the police during a summer party.",
+    "similar_to": []
+  },
+  "HT_DQ_025": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "A modern-day insurance salesman's orderly life unravels when he accidentally summons the Native American trickster god Coyote.",
+    "similar_to": []
+  },
+  "HT_CQ_001": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Mystery"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "ChristopherNolan"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Mystery movies directed by Christopher Nolan.",
+    "similar_to": []
+  },
+  "HT_CQ_002": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Drama"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 1995,
+      "release_year_max": 1999
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": 110
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Movies released between 1995 and 1999 with runtime under 110 minutes and genre Drama.",
+    "similar_to": []
+  },
+  "HT_CQ_003": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Action"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": 2004
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "RidleyScott"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Action movies directed by Ridley Scott released before 2005.",
+    "similar_to": []
+  },
+  "HT_CQ_004": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Comedy"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 1998,
+      "release_year_max": 1998
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": 100,
+        "runtime_max": 110
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Comedy movies released in 1998 with runtime between 100 and 110 minutes.",
+    "similar_to": []
+  },
+  "HT_CQ_005": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Fantasy"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "GuillermodelToro"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Fantasy movies directed by Guillermo del Toro.",
+    "similar_to": []
+  },
+  "HT_CQ_006": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "ScienceFiction"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": 1989
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": null,
+        "runtime_min": 110,
+        "runtime_max": 125
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Sci-fi movies released before 1990 with runtime between 110 and 125 minutes.",
+    "similar_to": []
+  },
+  "HT_CQ_007": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Drama"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "DamienChazelle"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Drama movies directed by Damien Chazelle.",
+    "similar_to": []
+  },
+  "HT_CQ_008": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Psychological"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 2012,
+      "release_year_max": 2012
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 22,
+        "episodes_max": 22,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Psychological anime released in 2012 with exactly 22 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_009": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Historical"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 2019,
+      "release_year_max": 2019
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 24,
+        "episodes_max": 24,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Historical anime released in 2019 with 24 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_010": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Mystery"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 21,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": 50.0
+      },
+      "book": null
+    },
+    "semantic_query": "Mystery anime ranked in the top 50 with more than 20 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_011": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Fantasy"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 13,
+        "episodes_max": 13,
+        "popularity_min": 1.0,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Fantasy anime with popularity rank under 60 and exactly 13 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_012": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Romance"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 2008,
+      "release_year_max": 2008
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 25,
+        "episodes_max": 25,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Romance anime released in 2008 with 25 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_013": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Sci-Fi"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 2018,
+      "release_year_max": 2018
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 23,
+        "episodes_max": 23,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Sci-Fi anime released in 2018 with 23 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_014": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Mystery"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 2012,
+      "release_year_max": 2012
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 22,
+        "episodes_max": 22,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Mystery anime released in 2012 with 22 episodes.",
+    "similar_to": []
+  },
+  "HT_CQ_015": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Thomas Pynchon"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": 200,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Books by Thomas Pynchon with fewer than 200 pages.",
+    "similar_to": []
+  },
+  "HT_CQ_016": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Classics"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Robert Penn Warren"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Classics books by Robert Penn Warren.",
+    "similar_to": []
+  },
+  "HT_CQ_017": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Thriller"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Lee Child"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": 350,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Thriller books by Lee Child with more than 350 pages.",
+    "similar_to": []
+  },
+  "HT_CQ_018": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Fantasy"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Terry Brooks"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": 400,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Fantasy books by Terry Brooks with more than 400 pages.",
+    "similar_to": []
+  },
+  "HT_CQ_019": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Short Stories"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "O. Henry"
+        ],
+        "rating_min": 4.0,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Short stories by O. Henry with rating above 4.0.",
+    "similar_to": []
+  },
+  "HT_CQ_020": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Horror"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "John Connolly"
+        ],
+        "rating_min": 3.9,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Horror mystery books by John Connolly with rating above 3.9.",
+    "similar_to": []
+  },
+  "HT_MD_001": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Cyberpunk dystopias exploring neural implants and corporate hegemony.",
+    "similar_to": []
+  },
+  "HT_MD_002": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Stories about memory manipulation, altered recollections, and manufactured identities.",
+    "similar_to": []
+  },
+  "HT_MD_003": {
+    "media_types": [
+      "anime",
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Grimdark medieval warrior mercenaries battling in brutal wartime conflicts.",
+    "similar_to": []
+  },
+  "HT_MD_004": {
+    "media_types": [
+      "anime",
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Supernatural folklore encounters with wandering spirits and ancient mythical beasts.",
+    "similar_to": []
+  },
+  "HT_MD_005": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Psychological cat-and-mouse games between brilliant investigators and sociopathic masterminds.",
+    "similar_to": []
+  },
+  "HT_MD_006": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Battle royale death matches where competitors summon legendary figures or fight for relics.",
+    "similar_to": []
+  },
+  "HT_MD_007": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Time travel tragedies exploring multiple world lines, paradoxes, and the emotional cost of altering history.",
+    "similar_to": []
+  },
+  "HT_MD_008": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Intricate mystery investigations involving observational deduction and hidden motives.",
+    "similar_to": []
+  },
+  "HT_MD_009": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Bizarre conspiracies and underground societies operating hidden communication channels.",
+    "similar_to": []
+  },
+  "HT_MD_010": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Corrupt political power struggles and charismatic populist leaders manipulating public sentiment.",
+    "similar_to": []
+  },
+  "HT_MD_011": {
+    "media_types": [
+      "anime",
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Epic high fantasy quests to overthrow dark lords threatening mystical kingdoms.",
+    "similar_to": []
+  },
+  "HT_MD_012": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Dystopian corporate theme parks and absurd amusement spectacles with dark secrets.",
+    "similar_to": []
+  },
+  "HT_MD_013": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Dark noir detective cases involving serial murderers and haunting personal trauma.",
+    "similar_to": []
+  },
+  "HT_MD_014": {
+    "media_types": [
+      "movie",
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Coming-of-age emotional journeys dealing with psychological isolation and finding a voice.",
+    "similar_to": []
+  },
+  "HT_MD_015": {
+    "media_types": [
+      "anime",
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Mythological trickster gods interfering in the ordinary modern lives of unsuspecting mortals.",
+    "similar_to": []
+  },
+  "HT_ABS_001": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": 1980,
+      "release_year_max": 1985
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "ChristopherNolan"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Movies directed by Christopher Nolan released between 1980 and 1985.",
+    "similar_to": []
+  },
+  "HT_ABS_002": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "ScienceFiction"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "DamienChazelle"
+        ],
+        "revenue_min": null,
+        "runtime_min": 200,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Sci-fi movies directed by Damien Chazelle with runtime over 200 minutes.",
+    "similar_to": []
+  },
+  "HT_ABS_003": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Horror"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [
+          "LeonardoDiCaprio"
+        ],
+        "director": [
+          "PeterWeir"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Horror movies directed by Peter Weir starring Leonardo DiCaprio.",
+    "similar_to": []
+  },
+  "HT_ABS_004": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": 1969
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [],
+        "revenue_min": 2000000000.0,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Movies with revenue over 2 billion dollars released before 1970.",
+    "similar_to": []
+  },
+  "HT_ABS_005": {
+    "media_types": [
+      "movie"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Animation",
+        "Family"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": {
+        "production_companies": [],
+        "cast": [],
+        "director": [
+          "RidleyScott"
+        ],
+        "revenue_min": null,
+        "runtime_min": null,
+        "runtime_max": null
+      },
+      "anime": null,
+      "book": null
+    },
+    "semantic_query": "Animated family movies directed by Ridley Scott.",
+    "similar_to": []
+  },
+  "HT_ABS_006": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": 2021,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 3000,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Anime series with more than 3000 episodes released after 2020.",
+    "similar_to": []
+  },
+  "HT_ABS_007": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Psychological",
+        "Horror"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 1950,
+      "release_year_max": 1950
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 100,
+        "episodes_max": null,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Psychological horror anime released in 1950 with 100 episodes.",
+    "similar_to": []
+  },
+  "HT_ABS_008": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Sports"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": null,
+        "episodes_max": 2,
+        "popularity_min": null,
+        "ranking_max": 5.0
+      },
+      "book": null
+    },
+    "semantic_query": "Sports anime ranked in the top 5 with fewer than 3 episodes.",
+    "similar_to": []
+  },
+  "HT_ABS_009": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Mecha"
+      ],
+      "genres_exclude": [],
+      "release_year_min": 2018,
+      "release_year_max": 2018
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 500,
+        "episodes_max": 500,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Mecha anime released in 2018 with popularity rank under 5 and exactly 500 episodes.",
+    "similar_to": []
+  },
+  "HT_ABS_010": {
+    "media_types": [
+      "anime"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Romance"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": {
+        "episodes_min": 999,
+        "episodes_max": 999,
+        "popularity_min": null,
+        "ranking_max": null
+      },
+      "book": null
+    },
+    "semantic_query": "Romance anime series with exactly 999 episodes.",
+    "similar_to": []
+  },
+  "HT_ABS_011": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Thomas Pynchon"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": 5000,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Books written by Thomas Pynchon with more than 5000 pages.",
+    "similar_to": []
+  },
+  "HT_ABS_012": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Science Fiction"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Jane Austen"
+        ],
+        "rating_min": 4.8,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Science fiction books by Jane Austen published with rating above 4.8.",
+    "similar_to": []
+  },
+  "HT_ABS_013": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [],
+        "rating_min": 4.99,
+        "isbn": null,
+        "characters": [],
+        "pages_min": 1,
+        "pages_max": 1,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Books with rating above 4.99 and exactly 1 page.",
+    "similar_to": []
+  },
+  "HT_ABS_014": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Thriller"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "Lee Child"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": null,
+        "pages_max": 10,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Thriller novels by Lee Child with fewer than 10 pages.",
+    "similar_to": []
+  },
+  "HT_ABS_015": {
+    "media_types": [
+      "book"
+    ],
+    "common": {
+      "title": null,
+      "genres_include": [
+        "Fantasy"
+      ],
+      "genres_exclude": [],
+      "release_year_min": null,
+      "release_year_max": null
+    },
+    "domain_queries": {
+      "movie": null,
+      "anime": null,
+      "book": {
+        "author": [
+          "George Saunders"
+        ],
+        "rating_min": null,
+        "isbn": null,
+        "characters": [],
+        "pages_min": 2000,
+        "pages_max": null,
+        "publisher": null
+      }
+    },
+    "semantic_query": "Fantasy books by George Saunders with more than 2000 pages.",
+    "similar_to": []
+  }
+}

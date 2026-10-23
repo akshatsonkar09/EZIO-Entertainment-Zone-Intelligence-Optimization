@@ -1,0 +1,14 @@
+& "D:\AI_ML\Miniconda3\shell\condabin\conda-hook.ps1"
+
+conda activate "D:\AI_ML\conda_envs\entertainment-ai"
+
+cd "D:\AI_ML\Project\Entertainment_Discovery"
+
+code .
+
+
+conda activate entertainment-ai
+code .
+
+
+python -m pip install MODULE_NAME --proxy "http://edcguest:edcguest@172.31.100.27:3128"

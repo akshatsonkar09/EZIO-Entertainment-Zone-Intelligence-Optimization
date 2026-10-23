@@ -1,0 +1,101 @@
+query_id,query_text,category,domain,expected_absence,hard_constraints
+HT_KI_001,Find the movie Whiplash directed by Damien Chazelle.,known_item,movie,False,{}
+HT_KI_002,Find the film The Prestige.,known_item,movie,False,{}
+HT_KI_003,Find the movie Memento.,known_item,movie,False,{}
+HT_KI_004,Show me The Truman Show.,known_item,movie,False,{}
+HT_KI_005,Find Pan's Labyrinth directed by Guillermo del Toro.,known_item,movie,False,{}
+HT_KI_006,Find the sci-fi film Gattaca.,known_item,movie,False,{}
+HT_KI_007,Find the movie Fight Club directed by David Fincher.,known_item,movie,False,{}
+HT_KI_008,Find Blade Runner directed by Ridley Scott.,known_item,movie,False,{}
+HT_KI_009,Find the anime series Psycho-Pass.,known_item,anime,False,{}
+HT_KI_010,Find Vinland Saga.,known_item,anime,False,{}
+HT_KI_011,Find the anime Mushishi.,known_item,anime,False,{}
+HT_KI_012,Find the anime Monster.,known_item,anime,False,{}
+HT_KI_013,Find Fate/Zero.,known_item,anime,False,{}
+HT_KI_014,Find Steins;Gate 0.,known_item,anime,False,{}
+HT_KI_015,Find the anime Hyouka.,known_item,anime,False,{}
+HT_KI_016,Find Toradora!.,known_item,anime,False,{}
+HT_KI_017,Find The Crying of Lot 49 by Thomas Pynchon.,known_item,book,False,{}
+HT_KI_018,Find All the King's Men by Robert Penn Warren.,known_item,book,False,{}
+HT_KI_019,Find The Midnight Line by Lee Child.,known_item,book,False,{}
+HT_KI_020,Find First King of Shannara by Terry Brooks.,known_item,book,False,{}
+HT_KI_021,Find The Gift of the Magi by O. Henry.,known_item,book,False,{}
+HT_KI_022,Find Every Dead Thing by John Connolly.,known_item,book,False,{}
+HT_KI_023,Find CivilWarLand in Bad Decline by George Saunders.,known_item,book,False,{}
+HT_KI_024,Find Speak by Laurie Halse Anderson.,known_item,book,False,{}
+HT_KI_025,Find Coyote Blue by Christopher Moore.,known_item,book,False,{}
+HT_DQ_001,An insurance investigator with anterograde amnesia uses polaroids and tattoos to hunt his wife's killer.,descriptive,movie,False,{}
+HT_DQ_002,An ambitious young jazz drummer is pushed to his psychological limits by a ruthless music conservatory instructor.,descriptive,movie,False,{}
+HT_DQ_003,A man discovers his entire life is an unscripted 24-hour reality television broadcast filmed on an enormous domed set.,descriptive,movie,False,{}
+HT_DQ_004,Two rival stage magicians in Victorian London engage in a competitive obsession to perform the ultimate teleportation illusion.,descriptive,movie,False,{}
+HT_DQ_005,"In 1944 post-Civil War Spain, a young girl escapes her cruel stepfather into an ancient mythical underworld labyrinth.",descriptive,movie,False,{}
+HT_DQ_006,"In a future society driven by genetic determinism, an in-valid man assumes the identity of a paralyzed athlete to travel into space.",descriptive,movie,False,{}
+HT_DQ_007,An insomniac office worker forms an underground combat club with a charismatic soap salesman.,descriptive,movie,False,{}
+HT_DQ_008,A cynical blade runner cop is assigned to track down and retire four rogue replicants who returned to Earth.,descriptive,movie,False,{}
+HT_DQ_009,A futuristic society where the Sibyl System continuously quantifies mental states and criminal intent using Dominator weapons.,descriptive,anime,False,{}
+HT_DQ_010,A young Icelandic warrior joins a band of Viking mercenaries seeking vengeance against the leader who killed his father.,descriptive,anime,False,{}
+HT_DQ_011,"A wandering traveler studies primitive lifeforms that exist alongside humans, curing bizarre spiritual afflictions.",descriptive,anime,False,{}
+HT_DQ_012,A brilliant brain surgeon in Germany saves the life of a young boy who grows up to be a charismatic psychopathic killer.,descriptive,anime,False,{}
+HT_DQ_013,Seven mages summon legendary heroic spirits to fight in a secret battle royale in Fuyuki City for a wish-granting relic.,descriptive,anime,False,{}
+HT_DQ_014,An eccentric scientist suffers from PTSD and depression after failing to save the woman he loved across multiple world lines.,descriptive,anime,False,{}
+HT_DQ_015,An energy-conserving high school boy joins the Classic Literature Club and solves everyday campus mysteries.,descriptive,anime,False,{}
+HT_DQ_016,"A gentle high school boy with an intimidating delinquent face forms an unlikely alliance with a tiny, fierce palmtop tiger girl.",descriptive,anime,False,{}
+HT_DQ_017,A woman named Oedipa Maas uncovers what may be a centuries-old underground postal conspiracy called the Tristero.,descriptive,book,False,{}
+HT_DQ_018,The political rise and moral corruption of a ruthless Southern governor named Willie Stark observed by his cynical aide.,descriptive,book,False,{}
+HT_DQ_019,A nomadic ex-military investigator spots a tiny West Point graduation ring in a pawn shop and uncovers a missing soldier mystery.,descriptive,book,False,{}
+HT_DQ_020,A Druid named Bremen struggles to unite the Four Lands against the emerging threat of the demonic Warlock Lord.,descriptive,book,False,{}
+HT_DQ_021,A young impoverished couple secretly sacrifice their most precious possessions to buy Christmas gifts for each other.,descriptive,book,False,{}
+HT_DQ_022,A former NYPD detective turned private investigator investigates brutal serial killings that lead back to his own dark past.,descriptive,book,False,{}
+HT_DQ_023,A dystopian satire set in a bizarre historical theme park where genetically altered monsters and disillusioned workers clash.,descriptive,book,False,{}
+HT_DQ_024,A traumatized high school freshman becomes selectively mute after calling the police during a summer party.,descriptive,book,False,{}
+HT_DQ_025,A modern-day insurance salesman's orderly life unravels when he accidentally summons the Native American trickster god Coyote.,descriptive,book,False,{}
+HT_CQ_001,Mystery movies directed by Christopher Nolan.,constraint,movie,False,"{""director"": [""ChristopherNolan""], ""genres_include"": [""Mystery""]}"
+HT_CQ_002,Movies released between 1995 and 1999 with runtime under 110 minutes and genre Drama.,constraint,movie,False,"{""release_year_min"": 1995, ""release_year_max"": 1999, ""runtime_max"": 110, ""genres_include"": [""Drama""]}"
+HT_CQ_003,Action movies directed by Ridley Scott released before 2005.,constraint,movie,False,"{""director"": [""RidleyScott""], ""release_year_max"": 2004, ""genres_include"": [""Action""]}"
+HT_CQ_004,Comedy movies released in 1998 with runtime between 100 and 110 minutes.,constraint,movie,False,"{""release_year_min"": 1998, ""release_year_max"": 1998, ""runtime_min"": 100, ""runtime_max"": 110, ""genres_include"": [""Comedy""]}"
+HT_CQ_005,Fantasy movies directed by Guillermo del Toro.,constraint,movie,False,"{""director"": [""GuillermodelToro""], ""genres_include"": [""Fantasy""]}"
+HT_CQ_006,Sci-fi movies released before 1990 with runtime between 110 and 125 minutes.,constraint,movie,False,"{""release_year_max"": 1989, ""runtime_min"": 110, ""runtime_max"": 125, ""genres_include"": [""ScienceFiction""]}"
+HT_CQ_007,Drama movies directed by Damien Chazelle.,constraint,movie,False,"{""director"": [""DamienChazelle""], ""genres_include"": [""Drama""]}"
+HT_CQ_008,Psychological anime released in 2012 with exactly 22 episodes.,constraint,anime,False,"{""release_year_min"": 2012, ""release_year_max"": 2012, ""episodes_min"": 22, ""episodes_max"": 22, ""genres_include"": [""Psychological""]}"
+HT_CQ_009,Historical anime released in 2019 with 24 episodes.,constraint,anime,False,"{""release_year_min"": 2019, ""release_year_max"": 2019, ""episodes_min"": 24, ""episodes_max"": 24, ""genres_include"": [""Historical""]}"
+HT_CQ_010,Mystery anime ranked in the top 50 with more than 20 episodes.,constraint,anime,False,"{""ranking_max"": 50, ""episodes_min"": 21, ""genres_include"": [""Mystery""]}"
+HT_CQ_011,Fantasy anime with popularity rank under 60 and exactly 13 episodes.,constraint,anime,False,"{""popularity_min"": 1, ""episodes_min"": 13, ""episodes_max"": 13, ""genres_include"": [""Fantasy""]}"
+HT_CQ_012,Romance anime released in 2008 with 25 episodes.,constraint,anime,False,"{""release_year_min"": 2008, ""release_year_max"": 2008, ""episodes_min"": 25, ""episodes_max"": 25, ""genres_include"": [""Romance""]}"
+HT_CQ_013,Sci-Fi anime released in 2018 with 23 episodes.,constraint,anime,False,"{""release_year_min"": 2018, ""release_year_max"": 2018, ""episodes_min"": 23, ""episodes_max"": 23, ""genres_include"": [""Sci-Fi""]}"
+HT_CQ_014,Mystery anime released in 2012 with 22 episodes.,constraint,anime,False,"{""release_year_min"": 2012, ""release_year_max"": 2012, ""episodes_min"": 22, ""episodes_max"": 22, ""genres_include"": [""Mystery""]}"
+HT_CQ_015,Books by Thomas Pynchon with fewer than 200 pages.,constraint,book,False,"{""author"": [""Thomas Pynchon""], ""pages_max"": 200}"
+HT_CQ_016,Classics books by Robert Penn Warren.,constraint,book,False,"{""author"": [""Robert Penn Warren""], ""genres_include"": [""Classics""]}"
+HT_CQ_017,Thriller books by Lee Child with more than 350 pages.,constraint,book,False,"{""author"": [""Lee Child""], ""pages_min"": 350, ""genres_include"": [""Thriller""]}"
+HT_CQ_018,Fantasy books by Terry Brooks with more than 400 pages.,constraint,book,False,"{""author"": [""Terry Brooks""], ""pages_min"": 400, ""genres_include"": [""Fantasy""]}"
+HT_CQ_019,Short stories by O. Henry with rating above 4.0.,constraint,book,False,"{""author"": [""O. Henry""], ""rating_min"": 4.0, ""genres_include"": [""Short Stories""]}"
+HT_CQ_020,Horror mystery books by John Connolly with rating above 3.9.,constraint,book,False,"{""author"": [""John Connolly""], ""rating_min"": 3.9, ""genres_include"": [""Horror""]}"
+HT_MD_001,Cyberpunk dystopias exploring neural implants and corporate hegemony.,multi_domain,mixed,False,{}
+HT_MD_002,"Stories about memory manipulation, altered recollections, and manufactured identities.",multi_domain,mixed,False,{}
+HT_MD_003,Grimdark medieval warrior mercenaries battling in brutal wartime conflicts.,multi_domain,mixed,False,{}
+HT_MD_004,Supernatural folklore encounters with wandering spirits and ancient mythical beasts.,multi_domain,mixed,False,{}
+HT_MD_005,Psychological cat-and-mouse games between brilliant investigators and sociopathic masterminds.,multi_domain,mixed,False,{}
+HT_MD_006,Battle royale death matches where competitors summon legendary figures or fight for relics.,multi_domain,mixed,False,{}
+HT_MD_007,"Time travel tragedies exploring multiple world lines, paradoxes, and the emotional cost of altering history.",multi_domain,mixed,False,{}
+HT_MD_008,Intricate mystery investigations involving observational deduction and hidden motives.,multi_domain,mixed,False,{}
+HT_MD_009,Bizarre conspiracies and underground societies operating hidden communication channels.,multi_domain,mixed,False,{}
+HT_MD_010,Corrupt political power struggles and charismatic populist leaders manipulating public sentiment.,multi_domain,mixed,False,{}
+HT_MD_011,Epic high fantasy quests to overthrow dark lords threatening mystical kingdoms.,multi_domain,mixed,False,{}
+HT_MD_012,Dystopian corporate theme parks and absurd amusement spectacles with dark secrets.,multi_domain,mixed,False,{}
+HT_MD_013,Dark noir detective cases involving serial murderers and haunting personal trauma.,multi_domain,mixed,False,{}
+HT_MD_014,Coming-of-age emotional journeys dealing with psychological isolation and finding a voice.,multi_domain,mixed,False,{}
+HT_MD_015,Mythological trickster gods interfering in the ordinary modern lives of unsuspecting mortals.,multi_domain,mixed,False,{}
+HT_ABS_001,Movies directed by Christopher Nolan released between 1980 and 1985.,absence,movie,True,"{""director"": [""ChristopherNolan""], ""release_year_min"": 1980, ""release_year_max"": 1985}"
+HT_ABS_002,Sci-fi movies directed by Damien Chazelle with runtime over 200 minutes.,absence,movie,True,"{""director"": [""DamienChazelle""], ""runtime_min"": 200, ""genres_include"": [""ScienceFiction""]}"
+HT_ABS_003,Horror movies directed by Peter Weir starring Leonardo DiCaprio.,absence,movie,True,"{""director"": [""PeterWeir""], ""cast"": [""LeonardoDiCaprio""], ""genres_include"": [""Horror""]}"
+HT_ABS_004,Movies with revenue over 2 billion dollars released before 1970.,absence,movie,True,"{""release_year_max"": 1969, ""revenue_min"": 2000000000}"
+HT_ABS_005,Animated family movies directed by Ridley Scott.,absence,movie,True,"{""director"": [""RidleyScott""], ""genres_include"": [""Animation"", ""Family""]}"
+HT_ABS_006,Anime series with more than 3000 episodes released after 2020.,absence,anime,True,"{""release_year_min"": 2021, ""episodes_min"": 3000}"
+HT_ABS_007,Psychological horror anime released in 1950 with 100 episodes.,absence,anime,True,"{""release_year_min"": 1950, ""release_year_max"": 1950, ""episodes_min"": 100, ""genres_include"": [""Psychological"", ""Horror""]}"
+HT_ABS_008,Sports anime ranked in the top 5 with fewer than 3 episodes.,absence,anime,True,"{""ranking_max"": 5, ""episodes_max"": 2, ""genres_include"": [""Sports""]}"
+HT_ABS_009,Mecha anime released in 2018 with popularity rank under 5 and exactly 500 episodes.,absence,anime,True,"{""release_year_min"": 2018, ""release_year_max"": 2018, ""episodes_min"": 500, ""episodes_max"": 500, ""genres_include"": [""Mecha""]}"
+HT_ABS_010,Romance anime series with exactly 999 episodes.,absence,anime,True,"{""episodes_min"": 999, ""episodes_max"": 999, ""genres_include"": [""Romance""]}"
+HT_ABS_011,Books written by Thomas Pynchon with more than 5000 pages.,absence,book,True,"{""author"": [""Thomas Pynchon""], ""pages_min"": 5000}"
+HT_ABS_012,Science fiction books by Jane Austen published with rating above 4.8.,absence,book,True,"{""author"": [""Jane Austen""], ""rating_min"": 4.8, ""genres_include"": [""Science Fiction""]}"
+HT_ABS_013,Books with rating above 4.99 and exactly 1 page.,absence,book,True,"{""rating_min"": 4.99, ""pages_min"": 1, ""pages_max"": 1}"
+HT_ABS_014,Thriller novels by Lee Child with fewer than 10 pages.,absence,book,True,"{""author"": [""Lee Child""], ""pages_max"": 10, ""genres_include"": [""Thriller""]}"
+HT_ABS_015,Fantasy books by George Saunders with more than 2000 pages.,absence,book,True,"{""author"": [""George Saunders""], ""pages_min"": 2000, ""genres_include"": [""Fantasy""]}"

@@ -1,0 +1,621 @@
+{
+  "benchmark_name": "Project Black Knight Held-Out Relevance Benchmark v2.0",
+  "version": "2.0.0",
+  "split": "held_out_test",
+  "domains": ["movie", "anime", "book"],
+  "grading_scale": {
+    "3": "Highly Relevant (canonical match, exact intent, tone, and theme alignment)",
+    "2": "Partially Relevant (strong thematic, genre, or director/author alignment)",
+    "1": "Weakly Relevant (peripheral interest, minor thematic overlap)",
+    "0": "Irrelevant / Negative Distractor / Self-Exclusion Target"
+  },
+  "provenance_notes": "All labels and catalog IDs verified against active clean metadata datasets. Ground truth judgments are independent of model predictions.",
+  "queries": [
+    {
+      "query_id": "BENCH_M_01",
+      "domain": "movie",
+      "category": "reference_similarity",
+      "query_text": "Recommend movies similar to Inception",
+      "similar_to": ["Inception"],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Recommend movies similar to Inception",
+        "similar_to": ["Inception"]
+      },
+      "graded_relevance": {
+        "movie_634": 3,
+        "movie_1197": 3,
+        "movie_3575": 3,
+        "movie_95": 2,
+        "movie_662": 2,
+        "movie_1727": 1,
+        "movie_96": 0
+      },
+      "seed_item_ids": ["movie_96"]
+    },
+    {
+      "query_id": "BENCH_M_02",
+      "domain": "movie",
+      "category": "reference_similarity_alias",
+      "query_text": "Movies similar to The Dark Knight",
+      "similar_to": ["The Dark Knight"],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Movies similar to The Dark Knight",
+        "similar_to": ["The Dark Knight"]
+      },
+      "graded_relevance": {
+        "movie_1555": 3,
+        "movie_351": 3,
+        "movie_1197": 2,
+        "movie_662": 2,
+        "movie_3339": 1,
+        "movie_65": 0
+      },
+      "seed_item_ids": ["movie_65"]
+    },
+    {
+      "query_id": "BENCH_M_03",
+      "domain": "movie",
+      "category": "mood_tone_discovery",
+      "query_text": "Dark psychological crime thrillers with gritty atmosphere",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": ["Crime", "Thriller"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Dark psychological crime thrillers with gritty atmosphere",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "movie_1555": 3,
+        "movie_662": 3,
+        "movie_3575": 3,
+        "movie_351": 2,
+        "movie_1849": 2,
+        "movie_3234": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_M_04",
+      "domain": "movie",
+      "category": "genre_discovery",
+      "query_text": "Classic space opera science fiction with futuristic world building",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": ["Science Fiction"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Classic space opera science fiction with futuristic world building",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "movie_95": 3,
+        "movie_1727": 3,
+        "movie_3160": 3,
+        "movie_634": 2,
+        "movie_0": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_M_05",
+      "domain": "movie",
+      "category": "metadata_constraints",
+      "query_text": "Movies directed by Christopher Nolan released between 2005 and 2015",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"release_year_min": 2005, "release_year_max": 2015, "genres_include": [], "genres_exclude": []},
+        "domain_queries": {"movie": {"director": ["Christopher Nolan"]}},
+        "semantic_query": "Movies directed by Christopher Nolan released between 2005 and 2015",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "movie_65": 3,
+        "movie_96": 3,
+        "movie_95": 3,
+        "movie_1197": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_M_06",
+      "domain": "movie",
+      "category": "mixed_intent",
+      "query_text": "Mind-bending sci-fi movies similar to The Matrix released before 2010",
+      "similar_to": ["The Matrix"],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"release_year_max": 2010, "genres_include": ["Science Fiction"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Mind-bending sci-fi movies similar to The Matrix released before 2010",
+        "similar_to": ["The Matrix"]
+      },
+      "graded_relevance": {
+        "movie_1727": 3,
+        "movie_3575": 2,
+        "movie_662": 2,
+        "movie_634": 0
+      },
+      "seed_item_ids": ["movie_634"]
+    },
+    {
+      "query_id": "BENCH_M_07",
+      "domain": "movie",
+      "category": "difficult_negatives",
+      "query_text": "Philosophical sci-fi exploring humanity and artificial intelligence without mindless action",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": ["Science Fiction"], "genres_exclude": ["Action"]},
+        "domain_queries": {},
+        "semantic_query": "Philosophical sci-fi exploring humanity and artificial intelligence without mindless action",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "movie_1727": 3,
+        "movie_95": 2,
+        "movie_127": 0,
+        "movie_0": 0
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_M_08",
+      "domain": "movie",
+      "category": "genre_discovery",
+      "query_text": "Epic gangster crime drama about mafia power dynamics",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": ["Crime", "Drama"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Epic gangster crime drama about mafia power dynamics",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "movie_3339": 3,
+        "movie_1849": 3,
+        "movie_351": 3,
+        "movie_3234": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_M_09",
+      "domain": "movie",
+      "category": "reference_similarity",
+      "query_text": "Films similar to Pulp Fiction",
+      "similar_to": ["Pulp Fiction"],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Films similar to Pulp Fiction",
+        "similar_to": ["Pulp Fiction"]
+      },
+      "graded_relevance": {
+        "movie_1849": 3,
+        "movie_662": 2,
+        "movie_351": 2,
+        "movie_3234": 0
+      },
+      "seed_item_ids": ["movie_3234"]
+    },
+    {
+      "query_id": "BENCH_M_10",
+      "domain": "movie",
+      "category": "metadata_constraints",
+      "query_text": "Action movies released in 2015",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["movie"],
+        "common": {"release_year_min": 2015, "release_year_max": 2015, "genres_include": ["Action"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Action movies released in 2015",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "movie_127": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_A_01",
+      "domain": "anime",
+      "category": "reference_similarity",
+      "query_text": "Recommend anime similar to Death Note",
+      "similar_to": ["Death Note"],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Recommend anime similar to Death Note",
+        "similar_to": ["Death Note"]
+      },
+      "graded_relevance": {
+        "anime_730": 3,
+        "anime_633": 3,
+        "anime_9": 3,
+        "anime_539": 2,
+        "anime_726": 0,
+        "anime_16811": 0
+      },
+      "seed_item_ids": ["anime_726", "anime_16811"]
+    },
+    {
+      "query_id": "BENCH_A_02",
+      "domain": "anime",
+      "category": "reference_similarity_alias",
+      "query_text": "Anime similar to Spirited Away",
+      "similar_to": ["Spirited Away"],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Anime similar to Spirited Away",
+        "similar_to": ["Spirited Away"]
+      },
+      "graded_relevance": {
+        "anime_3": 2,
+        "anime_6": 0,
+        "anime_2867": 0
+      },
+      "seed_item_ids": ["anime_6", "anime_2867"]
+    },
+    {
+      "query_id": "BENCH_A_03",
+      "domain": "anime",
+      "category": "mood_tone_discovery",
+      "query_text": "Dark psychological thriller anime with serial killer mystery",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": ["Psychological", "Mystery"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Dark psychological thriller anime with serial killer mystery",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "anime_730": 3,
+        "anime_633": 3,
+        "anime_726": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_A_04",
+      "domain": "anime",
+      "category": "genre_discovery",
+      "query_text": "Cyberpunk sci-fi anime with space bounty hunters",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": ["Sci-Fi", "Action"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Cyberpunk sci-fi anime with space bounty hunters",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "anime_750": 3,
+        "anime_630": 3,
+        "anime_633": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_A_05",
+      "domain": "anime",
+      "category": "metadata_constraints",
+      "query_text": "Acclaimed anime series released between 2005 and 2010",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"release_year_min": 2005, "release_year_max": 2010, "genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Acclaimed anime series released between 2005 and 2010",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "anime_726": 3,
+        "anime_3": 3,
+        "anime_9": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_A_06",
+      "domain": "anime",
+      "category": "mixed_intent",
+      "query_text": "Sci-fi psychological anime similar to Psycho-Pass released after 2010",
+      "similar_to": ["Psycho-Pass"],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"release_year_min": 2011, "genres_include": ["Sci-Fi"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Sci-fi psychological anime similar to Psycho-Pass released after 2010",
+        "similar_to": ["Psycho-Pass"]
+      },
+      "graded_relevance": {
+        "anime_539": 3,
+        "anime_61": 2,
+        "anime_633": 0
+      },
+      "seed_item_ids": ["anime_633"]
+    },
+    {
+      "query_id": "BENCH_A_07",
+      "domain": "anime",
+      "category": "genre_discovery",
+      "query_text": "Military fantasy shounen anime with alchemy and brothers",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": ["Military", "Fantasy", "Shounen"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Military fantasy shounen anime with alchemy and brothers",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "anime_3": 3,
+        "anime_339": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_A_08",
+      "domain": "anime",
+      "category": "reference_similarity",
+      "query_text": "Anime series similar to Monster",
+      "similar_to": ["Monster"],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Anime series similar to Monster",
+        "similar_to": ["Monster"]
+      },
+      "graded_relevance": {
+        "anime_726": 3,
+        "anime_633": 2,
+        "anime_730": 0
+      },
+      "seed_item_ids": ["anime_730"]
+    },
+    {
+      "query_id": "BENCH_A_09",
+      "domain": "anime",
+      "category": "difficult_negatives",
+      "query_text": "Mature seinen psychological mystery without comedy or romance",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": ["Mystery", "Psychological"], "genres_exclude": ["Comedy", "Romance"]},
+        "domain_queries": {},
+        "semantic_query": "Mature seinen psychological mystery without comedy or romance",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "anime_730": 3,
+        "anime_633": 3,
+        "anime_726": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_A_10",
+      "domain": "anime",
+      "category": "genre_discovery",
+      "query_text": "Sci-fi mecha rebellion anime with tactical genius",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["anime"],
+        "common": {"genres_include": ["Mecha", "Sci-Fi"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Sci-fi mecha rebellion anime with tactical genius",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "anime_9": 3,
+        "anime_88": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_01",
+      "domain": "book",
+      "category": "reference_similarity",
+      "query_text": "Recommend sci-fi books similar to Dune",
+      "similar_to": ["The Great Dune Trilogy"],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Science Fiction"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Recommend sci-fi books similar to Dune",
+        "similar_to": ["The Great Dune Trilogy"]
+      },
+      "graded_relevance": {
+        "book_1323": 3,
+        "book_6016": 2,
+        "book_3913": 0
+      },
+      "seed_item_ids": ["book_3913"]
+    },
+    {
+      "query_id": "BENCH_B_02",
+      "domain": "book",
+      "category": "genre_discovery",
+      "query_text": "Classic dystopian fiction about surveillance and totalitarian society",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Dystopia", "Science Fiction"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Classic dystopian fiction about surveillance and totalitarian society",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_6205": 3,
+        "book_6016": 3,
+        "book_1323": 1
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_03",
+      "domain": "book",
+      "category": "metadata_constraints",
+      "query_text": "Books written by Isaac Asimov",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {"book": {"author": ["Isaac Asimov"]}},
+        "semantic_query": "Books written by Isaac Asimov",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_1323": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_04",
+      "domain": "book",
+      "category": "genre_discovery",
+      "query_text": "High fantasy epic novels about hobbits wizards and rings",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Fantasy"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "High fantasy epic novels about hobbits wizards and rings",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_3195": 3,
+        "book_6253": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_05",
+      "domain": "book",
+      "category": "mood_tone_discovery",
+      "query_text": "Dark gothic horror novel about scientific monster creation",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Horror", "Classics"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Dark gothic horror novel about scientific monster creation",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_2378": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_06",
+      "domain": "book",
+      "category": "mixed_intent",
+      "query_text": "Dystopian sci-fi novel similar to Brave New World without fantasy elements",
+      "similar_to": ["Brave New World"],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Dystopia"], "genres_exclude": ["Fantasy"]},
+        "domain_queries": {},
+        "semantic_query": "Dystopian sci-fi novel similar to Brave New World without fantasy elements",
+        "similar_to": ["Brave New World"]
+      },
+      "graded_relevance": {
+        "book_6205": 3,
+        "book_6016": 0
+      },
+      "seed_item_ids": ["book_6016"]
+    },
+    {
+      "query_id": "BENCH_B_07",
+      "domain": "book",
+      "category": "metadata_constraints",
+      "query_text": "Novels written by Frank Herbert",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {"book": {"author": ["Frank Herbert"]}},
+        "semantic_query": "Novels written by Frank Herbert",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_3913": 3
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_08",
+      "domain": "book",
+      "category": "genre_discovery",
+      "query_text": "Classic science fiction foundation and galactic empire exploration",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Science Fiction"], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Classic science fiction foundation and galactic empire exploration",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_1323": 3,
+        "book_3913": 2,
+        "book_6016": 2
+      },
+      "seed_item_ids": []
+    },
+    {
+      "query_id": "BENCH_B_09",
+      "domain": "book",
+      "category": "reference_similarity",
+      "query_text": "Books similar to The Hobbit",
+      "similar_to": ["The Hobbit"],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": [], "genres_exclude": []},
+        "domain_queries": {},
+        "semantic_query": "Books similar to The Hobbit",
+        "similar_to": ["The Hobbit"]
+      },
+      "graded_relevance": {
+        "book_1323": 2,
+        "book_3195": 0
+      },
+      "seed_item_ids": ["book_3195"]
+    },
+    {
+      "query_id": "BENCH_B_10",
+      "domain": "book",
+      "category": "difficult_negatives",
+      "query_text": "Classic dystopian fiction without fantasy or young adult romance",
+      "similar_to": [],
+      "expected_parse": {
+        "media_types": ["book"],
+        "common": {"genres_include": ["Dystopia"], "genres_exclude": ["Fantasy", "Young Adult"]},
+        "domain_queries": {},
+        "semantic_query": "Classic dystopian fiction without fantasy or young adult romance",
+        "similar_to": []
+      },
+      "graded_relevance": {
+        "book_6205": 3,
+        "book_6016": 3
+      },
+      "seed_item_ids": []
+    }
+  ]
+}
