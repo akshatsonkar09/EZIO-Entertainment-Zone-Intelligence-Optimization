@@ -1,0 +1,196 @@
+.bookmarks-screen-layout {
+  min-height: calc(100vh - 72px);
+  padding: 3rem 1.5rem 5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(30, 20, 60, 0.35) 0%, rgba(10, 10, 15, 0.95) 75%);
+}
+
+.bookmarks-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.bookmarks-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bookmarks-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bookmarks-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #d1d5db;
+  padding: 0.5rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bookmarks-back-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateX(-2px);
+}
+
+.bookmarks-heading-cluster {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bookmarks-main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f3f4f6;
+  margin: 0;
+}
+
+.bookmarks-count-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  color: #c084fc;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.clear-all-bookmarks-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #f87171;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-all-bookmarks-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.45);
+  color: #fca5a5;
+}
+
+/* Empty State Card */
+.bookmarks-empty-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(20, 20, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 4.5rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(16px);
+  margin-top: 1rem;
+}
+
+.empty-bookmark-glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.empty-bookmark-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  color: #c084fc;
+  margin-bottom: 1.5rem;
+}
+
+.empty-bookmark-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin-bottom: 0.75rem;
+}
+
+.empty-bookmark-desc {
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.empty-bookmark-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.explore-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);
+  color: #ffffff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(168, 85, 247, 0.35);
+  transition: all 0.2s ease;
+}
+
+.explore-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.5);
+}
+
+.explore-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e5e7eb;
+  padding: 0.75rem 1.4rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.explore-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
