@@ -1,0 +1,63 @@
+name: CI — Linux Compatibility & Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-linux-test:
+    name: Backend Linux Compatibility & Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Validate lockfile
+        run: uv lock --check
+
+      - name: Install dependencies from lockfile
+        run: uv sync --extra dev
+
+      - name: Bootstrap ChromaDB vector store
+        run: uv run python scripts/build_chroma_index.py
+
+      - name: Verify FastAPI backend import and routes
+        run: |
+          uv run python -c "from backend.main import app; print('FastAPI loaded successfully on Linux:', app.title)"
+
+      - name: Run backend test suite (139 tests)
+        run: uv run pytest tests
+
+  frontend-build:
+    name: Frontend Build Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend production bundle
+        working-directory: frontend
+        run: npm run build

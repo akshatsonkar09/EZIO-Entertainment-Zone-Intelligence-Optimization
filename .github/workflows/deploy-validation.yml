@@ -1,0 +1,96 @@
+name: Deployment Validation (Linux)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deployment-simulation:
+    name: Full Deployment Pipeline Simulation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Validate lockfile
+        run: uv lock --check
+
+      - name: Install dependencies from lockfile
+        run: uv sync --extra dev
+
+      - name: Bootstrap ChromaDB vector store
+        run: uv run python scripts/build_chroma_index.py
+
+      - name: Preload and cache Hugging Face models
+        run: uv run python scripts/preload_models.py
+
+      - name: Verify ChromaDB collection counts and metrics
+        run: |
+          uv run python -c "
+          import chromadb
+          client = chromadb.PersistentClient(path='data/chroma')
+          expected = {'movies': 4805, 'animes': 15453, 'books': 11230}
+          for name, count in expected.items():
+              coll = client.get_collection(name)
+              c_count = coll.count()
+              print(f'Verified {name}: {c_count}/{count} items')
+              assert c_count == count, f'Count mismatch in {name}: expected {count}, got {c_count}'
+          print('All ChromaDB collections verified successfully.')
+          "
+
+      - name: Verify model loading and inference on Linux
+        run: |
+          uv run python -c "
+          import os
+          from pathlib import Path
+          from sentence_transformers import SentenceTransformer, CrossEncoder
+          cache_dir = os.getenv('HF_HOME') or str(Path('data/models').resolve())
+          print('Loading SentenceTransformer from:', cache_dir)
+          emb = SentenceTransformer('all-MiniLM-L6-v2', cache_folder=cache_dir)
+          vec = emb.encode(['Sanity test'])
+          assert vec.shape == (1, 384), f'Unexpected embedding shape: {vec.shape}'
+          print('Loading CrossEncoder from:', cache_dir)
+          rerank = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', cache_folder=cache_dir)
+          score = rerank.predict([('query', 'doc')])
+          assert len(score) == 1, 'Unexpected reranker output'
+          print('Model inference verification successful.')
+          "
+
+      - name: Verify FastAPI backend import and routes
+        run: |
+          uv run python -c "
+          from backend.main import app
+          print(f'FastAPI loaded: {app.title} (routes: {len(app.routes)})')
+          route_paths = [r.path for r in app.routes]
+          assert '/health' in route_paths, 'Health check route missing'
+          assert '/api/search' in route_paths, 'Search API route missing'
+          assert '/api/domains' in route_paths, 'Domains API route missing'
+          print('Backend routes verified:', route_paths)
+          "
+
+      - name: Run backend test suite (139 tests)
+        run: uv run pytest tests
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend production bundle
+        working-directory: frontend
+        run: npm run build
