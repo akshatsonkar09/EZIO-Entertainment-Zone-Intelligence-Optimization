@@ -73,7 +73,7 @@ jobs:
           route_paths = [r.path for r in app.routes]
           assert '/health' in route_paths, 'Health check route missing'
           assert '/api/search' in route_paths, 'Search API route missing'
-          assert '/api/domains' in route_paths, 'Domains API route missing'
+          assert '/api/metadata/categories' in route_paths, 'Metadata categories route missing'
           print('Backend routes verified:', route_paths)
           "
 
