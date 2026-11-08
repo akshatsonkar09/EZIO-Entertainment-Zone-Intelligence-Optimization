@@ -13,6 +13,7 @@ Features:
 """
 
 import math
+import os
 import re
 import time
 from collections import defaultdict
@@ -38,6 +39,14 @@ PROJECT_ROOT = PACKAGE_DIR.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 CHROMA_DIR = DATA_DIR / "chroma"
+
+
+def get_model_cache_dir() -> str:
+    """Resolve shared model cache directory across preload and runtime retrieval."""
+    env_dir = os.getenv("HF_HOME") or os.getenv("MODEL_CACHE_DIR")
+    if env_dir and env_dir.strip():
+        return str(Path(env_dir.strip()).resolve())
+    return str((PROJECT_ROOT / "data" / "models").resolve())
 
 SUPPORTED_DOMAINS = ("movie", "anime", "book")
 
@@ -75,7 +84,8 @@ class RetrievalRepository:
     def __init__(self, data_dir: Path = DATA_DIR):
         self.data_dir = data_dir
         self.processed_dir = data_dir / "processed"
-        self.chroma_dir = data_dir / "chroma"
+        persist_env = os.getenv("CHROMA_PERSIST_DIR")
+        self.chroma_dir = Path(persist_env).resolve() if persist_env else (data_dir / "chroma")
 
         self._metadata_dfs: dict[str, pd.DataFrame] = {}
         self._document_texts: dict[str, list[str]] = {}
@@ -171,14 +181,28 @@ class RetrievalRepository:
         """Return lazy-loaded SentenceTransformer embedding model."""
         if self._embedding_model is None:
             from sentence_transformers import SentenceTransformer
-            self._embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+            cache_dir = get_model_cache_dir()
+            try:
+                self._embedding_model = SentenceTransformer("all-MiniLM-L6-v2", cache_folder=cache_dir)
+            except Exception as exc:
+                raise RuntimeError(
+                    f"Failed to load SentenceTransformer model 'all-MiniLM-L6-v2' from cache '{cache_dir}': {exc}. "
+                    "Ensure models are preloaded using 'python scripts/preload_models.py' during build."
+                ) from exc
         return self._embedding_model
 
     def get_reranker_model(self):
         """Return lazy-loaded CrossEncoder reranking model."""
         if self._reranker_model is None:
             from sentence_transformers import CrossEncoder
-            self._reranker_model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+            cache_dir = get_model_cache_dir()
+            try:
+                self._reranker_model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2", cache_folder=cache_dir)
+            except Exception as exc:
+                raise RuntimeError(
+                    f"Failed to load CrossEncoder model 'cross-encoder/ms-marco-MiniLM-L-6-v2' from cache '{cache_dir}': {exc}. "
+                    "Ensure models are preloaded using 'python scripts/preload_models.py' during build."
+                ) from exc
         return self._reranker_model
 
 

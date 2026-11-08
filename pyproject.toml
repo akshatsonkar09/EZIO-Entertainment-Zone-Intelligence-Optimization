@@ -1,41 +1,39 @@
 [project]
 name = "project-black-knight"
 version = "0.1.0"
-description = "Add your description here"
+description = "Project Black Knight - AI-powered entertainment discovery and retrieval engine"
 readme = "README.md"
 authors = [
     { name = "Akshat", email = "akshatsonkar09@gmail.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.11,<3.14"
 dependencies = [
-    "chromadb>=1.5.9",
+    "chromadb>=0.5.0",
     "contractions>=0.1.73",
+    "fastapi>=0.115.0",
     "ftfy>=6.3.1",
-    "gensim>=4.4.0",
-    "google-genai>=2.25.0",
-    "groq>=1.7.0",
-    "ipykernel>=7.3.0",
-    "langchain>=1.4.2",
-    "langgraph>=1.2.11",
-    "nltk==3.9.1",
-    "numpy>=2.5.3",
-    "pandas>=3.0.5",
-    "pydantic>=2.13.4",
-    "python-dotenv>=1.2.3",
+    "groq>=0.11.0",
+    "nltk>=3.9.1",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "pydantic>=2.10.0",
+    "python-dotenv>=1.0.0",
     "rank-bm25>=0.2.2",
-    "scikit-learn>=1.9.0",
-    "sentence-transformers>=6.0.1",
-    "wget>=3.2",
+    "scikit-learn>=1.5.0",
+    "sentence-transformers>=3.0.0",
+    "uvicorn[standard]>=0.30.0",
 ]
 
-[project.scripts]
-project-black-knight = "project_black_knight:main"
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27.0",
+    "pytest>=8.0.0",
+]
 
 [build-system]
-requires = ["uv_build>=0.12.5,<0.13.0"]
+requires = ["uv_build>=0.12.5,<0.14.0"]
 build-backend = "uv_build"
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "."]
 testpaths = ["tests"]
-

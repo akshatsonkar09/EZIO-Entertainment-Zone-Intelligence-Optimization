@@ -11,15 +11,47 @@ Verifies:
 """
 
 import json
+import os
 import pytest
 
-from project_black_knight.query_schema import BlackKnightQuery, CommonQuery, DomainQueries
+from project_black_knight.query_schema import (
+    BlackKnightQuery,
+    CommonQuery,
+    DomainQueries,
+    MovieQuery,
+    AnimeQuery,
+)
 from project_black_knight.retrieval import RetrievalRepository, search_black_knight
 from project_black_knight.diagnostics import (
     RetrievalTrace,
     TargetTrackingRecord,
     explain_filter_rejection,
 )
+
+
+@pytest.fixture(autouse=True)
+def mock_groq_parser_if_no_key(monkeypatch):
+    """
+    Ensure diagnostic tracing tests run deterministically without requiring an external Groq API key.
+    If GROQ_API_KEY is not set in environment, mock query_parser.parse_query to return the expected schema.
+    """
+    if not os.getenv("GROQ_API_KEY"):
+        def _mock_parse(user_query, *args, **kwargs):
+            if "Death Note" in str(user_query):
+                return BlackKnightQuery(
+                    media_types=["anime"],
+                    semantic_query="Death Note",
+                    common=CommonQuery(title="Death Note"),
+                    domain_queries=DomainQueries(anime=AnimeQuery()),
+                )
+            return BlackKnightQuery(
+                media_types=["movie"],
+                semantic_query="Inception",
+                common=CommonQuery(title="Inception"),
+                domain_queries=DomainQueries(movie=MovieQuery(director=["Christopher Nolan"])),
+            )
+
+        monkeypatch.setattr("project_black_knight.query_parser.parse_query", _mock_parse)
 
 
 @pytest.fixture(scope="module")

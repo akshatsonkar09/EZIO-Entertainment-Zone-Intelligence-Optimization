@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: project-black-knight-backend
+    runtime: python
+    plan: standard
+    buildCommand: "pip install -r requirements.txt && python scripts/build_chroma_index.py && python scripts/preload_models.py"
+    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT --workers 1"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.1
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: ENVIRONMENT
+        value: production
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false

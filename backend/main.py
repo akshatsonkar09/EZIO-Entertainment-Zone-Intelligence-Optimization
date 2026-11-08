@@ -7,6 +7,7 @@ random discovery, and metadata-driven browsing.
 from __future__ import annotations
 
 import logging
+import os
 from typing import Literal
 from fastapi import FastAPI, HTTPException, Query, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,6 +22,7 @@ from .schemas import (
 )
 from .services import (
     browse_by_metadata,
+    check_service_readiness,
     get_item_by_id,
     get_metadata_categories,
     get_random_item,
@@ -36,30 +38,93 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# Enable CORS for local frontend communication (Vite default is 5173)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
+
+def get_allowed_origins() -> list[str]:
+    """
+    Determine allowed CORS origins based on environment.
+    - In production (ENVIRONMENT=production): requires explicitly configured ALLOWED_ORIGINS;
+      disallows wildcard fallback and strictly excludes localhost origins.
+    - In development/testing: allows localhost origins by default (and any extra ALLOWED_ORIGINS).
+    """
+    is_production = os.getenv("ENVIRONMENT", "").lower() in ("production", "prod")
+    env_origins = os.getenv("ALLOWED_ORIGINS", "").strip()
+
+    if is_production:
+        if not env_origins:
+            raise RuntimeError(
+                "CRITICAL SECURITY CONFIGURATION ERROR: ENVIRONMENT is set to 'production' "
+                "but ALLOWED_ORIGINS is empty or not configured. You must specify exact frontend "
+                "domain(s) (e.g. ALLOWED_ORIGINS=https://your-frontend.vercel.app)."
+            )
+        origins = [o.strip() for o in env_origins.split(",") if o.strip()]
+        if "*" in origins:
+            raise RuntimeError(
+                "CRITICAL SECURITY CONFIGURATION ERROR: Wildcard '*' is strictly prohibited in "
+                "production ALLOWED_ORIGINS."
+            )
+        return origins
+
+    # Development / Testing environment
+    default_dev_origins = [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-        "*",
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
+    ]
+    if env_origins:
+        custom_origins = [o.strip() for o in env_origins.split(",") if o.strip()]
+        return list(dict.fromkeys(default_dev_origins + custom_origins))
+    return default_dev_origins
+
+
+# Enable CORS (credentials=False per CORS specification when using wildcards or cross-domain hosting)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=get_allowed_origins(),
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
 
-@app.get("/health", tags=["Health"])
-@app.get("/api/health", tags=["Health"])
-def health_check():
-    """Verify backend health and accessibility."""
+@app.get("/health/live", tags=["Health"])
+@app.get("/api/health/live", tags=["Health"])
+def liveness_check():
+    """Verify backend process liveness."""
     return {
         "status": "ok",
         "service": "Project Black Knight API",
         "version": "0.1.0",
+    }
+
+
+@app.get("/health", tags=["Health"])
+@app.get("/api/health", tags=["Health"])
+@app.get("/health/ready", tags=["Health"])
+@app.get("/api/health/ready", tags=["Health"])
+def readiness_check():
+    """
+    Verify application readiness by ensuring ChromaDB vector store collections are loaded.
+    Returns HTTP 200 when ready; returns HTTP 503 Service Unavailable when indexing or loading.
+    """
+    is_ready, details = check_service_readiness()
+    if not is_ready:
+        logger.warning(f"Readiness check failed: {details}")
+        return JSONResponse(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            content={
+                "status": "not_ready",
+                "service": "Project Black Knight API",
+                "version": "0.1.0",
+                "detail": details,
+            },
+        )
+    return {
+        "status": "ok",
+        "ready": True,
+        "service": "Project Black Knight API",
+        "version": "0.1.0",
+        "collections": details,
     }
 
 

@@ -46,6 +46,26 @@ from .schemas import (
 )
 
 
+def check_service_readiness() -> tuple[bool, dict[str, int] | str]:
+    """Verify ChromaDB collections are available and complete without full re-indexing."""
+    try:
+        if _REPO._chroma_client is None:
+            import chromadb
+            _REPO._chroma_client = chromadb.PersistentClient(path=str(_REPO.chroma_dir))
+        colls = {c.name: c for c in _REPO._chroma_client.list_collections()}
+        expected = {"movies": 4805, "animes": 15453, "books": 11230}
+        missing = [k for k in expected if k not in colls]
+        if missing:
+            return False, f"Missing vector collections: {missing}"
+        counts = {k: colls[k].count() for k in expected}
+        for k, exp_cnt in expected.items():
+            if counts[k] != exp_cnt:
+                return False, f"Collection '{k}' count mismatch ({counts[k]} != {exp_cnt})"
+        return True, counts
+    except Exception as exc:
+        return False, str(exc)
+
+
 class CatalogManager:
     """Manages lazy-loaded catalog overviews, synopses, and genre listings."""
 
