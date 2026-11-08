@@ -1,6 +1,6 @@
 import type { BrowseParams, ItemDetail, MetadataCategories, SearchResponse } from './types';
 
-const API_BASE = '';
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 
 export async function searchAPI(query: string, domain?: string | null, topK: number = 10): Promise<SearchResponse> {
   const cleanQuery = query.trim();

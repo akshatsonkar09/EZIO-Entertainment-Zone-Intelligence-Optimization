@@ -1,154 +1,51 @@
 # ==============================================================================
-# Byte-compiled / Optimized / C-extensions
+# Project Black Knight — Production .gitignore
 # ==============================================================================
+
+# Byte-compiled / Optimized / C-extensions
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 
-# ==============================================================================
 # Virtual Environments
-# ==============================================================================
 .venv/
-project_black_knight/
 venv/
 env/
 ENV/
-env.bak/
-venv.bak/
 
-# ==============================================================================
-# Environment Variables & Secrets
-# ==============================================================================
+# Environment Variables & Secrets (CRITICAL: Never commit credentials)
 .env
 .env.*
 !.env.example
 !.env.template
 
-# ==============================================================================
-# Python Packaging & Distribution
-# ==============================================================================
-build/
-dist/
-downloads/
-eggs/
-.eggs/
-*.egg-info/
-*.egg
-parts/
-var/
-sdist/
-develop-eggs/
-.installed.cfg
-pip-log.txt
-pip-delete-this-directory.txt
-
-# ==============================================================================
 # Testing & Code Quality
-# ==============================================================================
 .pytest_cache/
 .coverage
-.coverage.*
 htmlcov/
-.tox/
-.nox/
-.hypothesis/
-.mypy_cache/
-.ruff_cache/
 
-# ==============================================================================
-# Jupyter Notebooks
-# ==============================================================================
-.ipynb_checkpoints/
-*-checkpoint.ipynb
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
-# ==============================================================================
-# Machine Learning, Vector DB & Heavy Data Artifacts
-# ==============================================================================
-# Vector store databases and persistent indices (ChromaDB)
+# Vector Store (ChromaDB is bootstrapped automatically from .npy embeddings)
 data/chroma/
 chromadb/
 
-# Serialized model weights, transformers & vectorizers
-data/models/
-
-# Precomputed embeddings (matrices can be 100MB+)
-data/processed/embeddings/
-*.npy
-*.npz
-
-# Python pickle files (contains 180MB+ similarity matrices & pickled dataframes)
-*.pkl
-*.pickle
-
-# Local database files
-*.sqlite
-*.sqlite3
-*.db
-
-# Compressed archives in data
-*.zip
-*.tar.gz
-*.tgz
-*.rar
-*.7z
-
-# ==============================================================================
-# Evaluation Caches & Large Query Traces
-# ==============================================================================
-evaluation/cache/
-
-# ==============================================================================
-# Backups & Temporary Scripts
-# ==============================================================================
-backups/
+# Backups & Logs
 *.bak
-*.backup
 *.tmp
-*.temp
-
-# ==============================================================================
-# Logs
-# ==============================================================================
 *.log
-logs/
 
-# ==============================================================================
-# Frontend & Node.js (for planned React frontend)
-# ==============================================================================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.pnpm-debug.log*
-
-# ==============================================================================
-# Operating System Files
-# ==============================================================================
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# macOS
+# OS & Editor
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# ==============================================================================
-# IDEs & Code Editors
-# ==============================================================================
+Thumbs.db
+.vscode/
 .idea/
-*.swp
-*.swo
-*~
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+

@@ -1,0 +1,398 @@
+{
+  "generated_at": "Project Black Knight Workspace",
+  "total_files": 98,
+  "files": {
+    "backend/__init__.py": {
+      "sha256": "2b7fbe6b5cbf261bfd1ce3b54c4fd2d3ec684da85db9400af7e05f88531ca175",
+      "size_bytes": 52
+    },
+    "backend/main.py": {
+      "sha256": "4a1488c462703cce5a8d8ed6dcfe2b2bba4244150915c72d10bc1286fd8a42d9",
+      "size_bytes": 5729
+    },
+    "backend/schemas.py": {
+      "sha256": "5205e250e2ea8097a9546087d2748d6f122bbb958e629631c06dbfee6c5e01dc",
+      "size_bytes": 1530
+    },
+    "backend/services.py": {
+      "sha256": "2a5731b1d01b3f06ea110886e7f7fb9f08e251c26dced99a42b85c02aa7e06bf",
+      "size_bytes": 17239
+    },
+    "src/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "src/query_schema.py": {
+      "sha256": "b089bc369ee32c7ae1d0e57a1ce2b99b431136e99dc2e686f07d39dfde163806",
+      "size_bytes": 1601
+    },
+    "src/text_normalizer.py": {
+      "sha256": "8446e3a706774492836c57bba88a22a21355681599966b4a5c0bdd7bc38184fa",
+      "size_bytes": 712
+    },
+    "src/project_black_knight/__init__.py": {
+      "sha256": "0202f9e3878a7d9c25a688da6a08447595738fcaa38a3e6f0e02679a1e26a2fb",
+      "size_bytes": 1922
+    },
+    "src/project_black_knight/diagnostics.py": {
+      "sha256": "432ce26e86e1d4b0096bddd075459e6425ccf642ce73d0088b6728b224724a6e",
+      "size_bytes": 15601
+    },
+    "src/project_black_knight/metadata_filter.py": {
+      "sha256": "ce0326d008fcd7fbb92fedf9a27215e1ec676a27ae1b280f086a755045987d78",
+      "size_bytes": 24710
+    },
+    "src/project_black_knight/query_parser.py": {
+      "sha256": "d530ed4d3ef1d7487b7816ffd05d3b4da9c8f25f389f055f11bfc3066ea94e7a",
+      "size_bytes": 6239
+    },
+    "src/project_black_knight/query_schema.py": {
+      "sha256": "a614a9a82d0b0026e46bbe3ea84748ccd5fae193b31de6c87e702b8b0ac6b0a7",
+      "size_bytes": 1537
+    },
+    "src/project_black_knight/retrieval.py": {
+      "sha256": "773d2f8dd0bed84169d234ce2eb21f0bc84512c88c2915fe8638cdf6504f27e2",
+      "size_bytes": 42785
+    },
+    "src/project_black_knight/text_normalizer.py": {
+      "sha256": "e4e0f41cce43d164130622677b4ed4630bef024dc6890dd6746e9c0755017510",
+      "size_bytes": 2219
+    },
+    "data/processed/movie_metadata_clean.csv": {
+      "sha256": "6c035373c4749bf393706277191574219a174204c0684edd560a3656957cbcf9",
+      "size_bytes": 886776
+    },
+    "data/processed/anime_metadata_clean.csv": {
+      "sha256": "d5f1ec6b82f45eea9705dca186ae568806b4f6d2880a5f39d878a8cdcfed79b5",
+      "size_bytes": 1455765
+    },
+    "data/processed/book_metadata_clean.csv": {
+      "sha256": "1cc13e029d30826c987d13f636933a63c6dd967f4275a1cfc15721e83e18aeea",
+      "size_bytes": 2814188
+    },
+    "data/processed/movies1234.pkl": {
+      "sha256": "69cc68e8f5387fad89b8800acc05478b9def5cb11a26cfeafd593e653516aa1d",
+      "size_bytes": 6045237
+    },
+    "data/processed/anime_tag2.pkl": {
+      "sha256": "a287d022180543c8d0381d6a20677c6038cdaeaacc6853bc75355f35da7dd08a",
+      "size_bytes": 28650891
+    },
+    "data/processed/books_tag2.pkl": {
+      "sha256": "6bd20919ba9bf664b64edbfad1e11550450434e8932620f2e0b510dafad52fc1",
+      "size_bytes": 47820165
+    },
+    "data/processed/anime.pkl": {
+      "sha256": "cb270b3f27c2923583a294a1be5d72238cc25ad6b30b67b9e085865ddb2804d0",
+      "size_bytes": 15330343
+    },
+    "data/processed/books.pkl": {
+      "sha256": "d85597f683d9c4fb069970f6d6a7cd97a503c8d92f5087a05fb0cd4e8fa005cb",
+      "size_bytes": 26108998
+    },
+    "data/processed/anime_canonical_id_map.json": {
+      "sha256": "c2a0b2bb5b9f633de612d212432da040ace366878550a30940807a461bab58ac",
+      "size_bytes": 578856
+    },
+    "data/processed/embeddings/movie_embeddings.npy": {
+      "sha256": "b502c9b8937b7500db2e648723ab7ece962e415077a251d3fea331ebc22abe43",
+      "size_bytes": 7382144
+    },
+    "data/processed/embeddings/anime_embeddings.npy": {
+      "sha256": "ab017172b61c54ec1c8fd6c0569e84eaf3196ca3c77678bc125a825d0b56dfab",
+      "size_bytes": 23735936
+    },
+    "data/processed/embeddings/books_embeddings.npy": {
+      "sha256": "2d7d603d171716b362270090417d980e7939350fc1af6681f9ce2cb6da0a53bd",
+      "size_bytes": 17249408
+    },
+    "scripts/build_chroma_index.py": {
+      "sha256": "b12d8110237e9606cd2573d7196ea0d5bef7441a24d30b8700eb64968846182a",
+      "size_bytes": 7339
+    },
+    "evaluation/__init__.py": {
+      "sha256": "ee1f781b3b6349a1fb676b37cb562123ad9c15b4186c54b3c93f0d65da9a4ccb",
+      "size_bytes": 47
+    },
+    "evaluation/run_evaluation.py": {
+      "sha256": "8b55c4cc110e071020226fd5e2518ed72449fdd40bb3653591e6d1e59b6266da",
+      "size_bytes": 30428
+    },
+    "evaluation/black_knight_eval_queries_113_audited.csv": {
+      "sha256": "93df8574ab0a54babd5bacc7c62a34940eab39fe21e55d3faa95851a8ea03ab4",
+      "size_bytes": 228615
+    },
+    "tests/test_anime_deduplication.py": {
+      "sha256": "fa7bca66ba1f78d2b4f8bf3d9abd61dcba20764a9dd2f354e359d2f147d978dc",
+      "size_bytes": 4651
+    },
+    "tests/test_backend_api.py": {
+      "sha256": "6079b67750fe5fd3283980b0b2d2fc7238f64e24f819a277bc7698414c3fceda",
+      "size_bytes": 3816
+    },
+    "tests/test_datasets.py": {
+      "sha256": "424484f2000905d469b61de50056f3d0b2075f89e78bb7831cc7d66a48029ccd",
+      "size_bytes": 2012
+    },
+    "tests/test_exact_title_promotion.py": {
+      "sha256": "28cf83b96021ee24eba3fbdd66f1ec9cf90ef29c32f3c4e07de87083ebc89f17",
+      "size_bytes": 3290
+    },
+    "tests/test_genre_canonicalization.py": {
+      "sha256": "74906cb13b37daea4a5d652186208b8432d81a40fca7d111d5af20c2b4e3475b",
+      "size_bytes": 23126
+    },
+    "tests/test_hard_filter_correctness.py": {
+      "sha256": "cf90763ba364f0279096d96c457e7205463b04d24f73238787e40f170095491f",
+      "size_bytes": 18232
+    },
+    "tests/test_hybrid_retrieval.py": {
+      "sha256": "8ffd730f16a76a4e45729d13d2911dfe37f1ebac050cf2aa7b09fab6a2854a83",
+      "size_bytes": 23684
+    },
+    "tests/test_metadata_filtering.py": {
+      "sha256": "58fb8d261ed0dced511bf4c005a0cd8fef7252291c29fd706db36a80811b14e4",
+      "size_bytes": 14833
+    },
+    "tests/test_music_removal.py": {
+      "sha256": "e8dde2ed76f588c6e43c0c350452ca51bfd22813f8663ee2cdbb7de91c236e00",
+      "size_bytes": 7186
+    },
+    "tests/test_parser_evaluation.py": {
+      "sha256": "8e1b336a2c3ec309cfb4e4508952986623991e198ab0fe9e63c7f07f4768340a",
+      "size_bytes": 10359
+    },
+    "tests/test_query_parser.py": {
+      "sha256": "dc9acfde513767df65325e5ff92693d9b17016a2b5d61e222f64c298bcb71fb1",
+      "size_bytes": 770
+    },
+    "tests/test_query_schema.py": {
+      "sha256": "2347b221214b72f162f47bfb4bb04940e5e78716722283813527cf90581e4cf8",
+      "size_bytes": 1959
+    },
+    "tests/test_retrieval_diagnostics.py": {
+      "sha256": "1f6c24229cc16d6bca35ff8a63f3c903971f421dd52f42830a7c6c36678733a1",
+      "size_bytes": 8399
+    },
+    "tests/test_text_normalizer.py": {
+      "sha256": "3770889eb4063782b55b899b0e27ad061e3e46fa0da4d6b0167fb7454df9ac3c",
+      "size_bytes": 3325
+    },
+    "pyproject.toml": {
+      "sha256": "279cf40e450c8a9833f758a50524e481bbf3e619bd25b72619ce55958d2cbcfa",
+      "size_bytes": 938
+    },
+    "requirements.txt": {
+      "sha256": "5ad6409ae965831605848b8b0172151ba3808a8b8f427bc0679bc886a12cd3c6",
+      "size_bytes": 115
+    },
+    "LICENSE": {
+      "sha256": "b4094a11cb363099276b4ac9e63d2d13da3e611553721e42dc7e8f95a30c5e32",
+      "size_bytes": 1091
+    },
+    ".env.example": {
+      "sha256": "9d5ba363b796139b1c1996c0524a6bbf324b1ebed44cbcc8bf7876344abdc423",
+      "size_bytes": 723
+    },
+    "frontend/.oxlintrc.json": {
+      "sha256": "b4d344818a1e1bf43997e4744a9153c8eef770c98b58229cd86363dabb85ded4",
+      "size_bytes": 245
+    },
+    "frontend/index.html": {
+      "sha256": "d5783121347fa8083c4ba15f6f5ed989dbf1d6badc4c6887406ef6cb1c72293a",
+      "size_bytes": 933
+    },
+    "frontend/package.json": {
+      "sha256": "41dcb09fcaf8074b2a4c04db93b420fb87bd43b42e68bf390e0a8181f497d748",
+      "size_bytes": 593
+    },
+    "frontend/package-lock.json": {
+      "sha256": "a80206c85b49b3bb1540a6735d47ed943a2f3d315b1a2d643e6ac863e2778afd",
+      "size_bytes": 44015
+    },
+    "frontend/README.md": {
+      "sha256": "fa8aac78b8be1993010b57f41000a243ecba006f6731513fe4ec91e788bf2517",
+      "size_bytes": 1278
+    },
+    "frontend/tsconfig.app.json": {
+      "sha256": "8e5d12ba330e7d86409edec74b95451e0db22ee09b9426c94b5bf817571eddb0",
+      "size_bytes": 655
+    },
+    "frontend/tsconfig.json": {
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+      "size_bytes": 119
+    },
+    "frontend/tsconfig.node.json": {
+      "sha256": "d366cc0827139db39c61815f22491bbfda56c654354a42ad7795143d314e45e8",
+      "size_bytes": 558
+    },
+    "frontend/vite.config.ts": {
+      "sha256": "131dda30a204333b6f3e0a195c278e779319a2a8393d0ee3933934290a658747",
+      "size_bytes": 863
+    },
+    "frontend/public/favicon.svg": {
+      "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66",
+      "size_bytes": 9522
+    },
+    "frontend/public/hero_bg.jpg": {
+      "sha256": "8f5ca1ab27fd7af71c90f5b335b1edb55aa63000c51335058d1e94cfa969a709",
+      "size_bytes": 912812
+    },
+    "frontend/public/icons.svg": {
+      "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a",
+      "size_bytes": 5031
+    },
+    "frontend/src/api.ts": {
+      "sha256": "f820dfe2f1f1d2c057cb565c473b4023e77a602bd05b6b12c87ee341c06a6949",
+      "size_bytes": 2418
+    },
+    "frontend/src/App.css": {
+      "sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+      "size_bytes": 2891
+    },
+    "frontend/src/App.tsx": {
+      "sha256": "734f9de161b7e8eb4ef1809b2310b38e9e675c5964e714ff9d8e27bb7cde80b0",
+      "size_bytes": 1816
+    },
+    "frontend/src/index.css": {
+      "sha256": "76c7238a842437e640cfae0eb4f7b91e985e09d09264077803573faf9defa678",
+      "size_bytes": 3082
+    },
+    "frontend/src/main.tsx": {
+      "sha256": "6e9e5807fcbd48b75a96db5cbef36c996262196be42e6d4760dc86babbe61ad2",
+      "size_bytes": 230
+    },
+    "frontend/src/types.ts": {
+      "sha256": "29cd6f355f4b9147390416533789f9b4bed88080920e14ee2e0fbf7d136fd32f",
+      "size_bytes": 1015
+    },
+    "frontend/src/assets/hero.png": {
+      "sha256": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+      "size_bytes": 13057
+    },
+    "frontend/src/assets/react.svg": {
+      "sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5",
+      "size_bytes": 4126
+    },
+    "frontend/src/assets/vite.svg": {
+      "sha256": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+      "size_bytes": 8709
+    },
+    "frontend/src/components/AnimeDetails.tsx": {
+      "sha256": "56cb3f4c2cdccf57d6b5f7393dc1973bcbac253d4e83ecd9eeaef2ba81857822",
+      "size_bytes": 1728
+    },
+    "frontend/src/components/BookDetails.tsx": {
+      "sha256": "968065466376949b656da4f697591ff628873d1d7d07e81cb4d645b9606bf1c2",
+      "size_bytes": 2657
+    },
+    "frontend/src/components/DomainIcon.tsx": {
+      "sha256": "16a12b579e0671b2b8b793a9fc45f197af1e0dc3d6793f902e5890125982f1a6",
+      "size_bytes": 1127
+    },
+    "frontend/src/components/ErrorState.tsx": {
+      "sha256": "495d76316af2638f22b79574a045720eeae9589d26f1c818b46b090f5ea3930a",
+      "size_bytes": 1437
+    },
+    "frontend/src/components/MovieDetails.tsx": {
+      "sha256": "836209abca82b85f68c0ecc7af6298a73cfe25a0ef29fa865953812b30ac63ca",
+      "size_bytes": 2814
+    },
+    "frontend/src/components/Navbar.css": {
+      "sha256": "4fc1da5e9b9cf183def14287b49ddf7e681943d90d49006e6baa9a81c3acc39e",
+      "size_bytes": 10092
+    },
+    "frontend/src/components/Navbar.tsx": {
+      "sha256": "56ff1fa522476c0242518b174c38dc6d50f088cde4cd39bf13c7af44df1f2a42",
+      "size_bytes": 14982
+    },
+    "frontend/src/components/NoResults.tsx": {
+      "sha256": "c3c3ecc792df4414c1cec28ceec146bf0c140c39a3cb44d0c0743ceb9030c352",
+      "size_bytes": 1654
+    },
+    "frontend/src/components/RandomModal.css": {
+      "sha256": "7abadc3cb9308328e9684f7ac0d1921fca36e8b8c8df5ac71eaba684e2818399",
+      "size_bytes": 3749
+    },
+    "frontend/src/components/RandomModal.tsx": {
+      "sha256": "19d312d3713d486d22b4138f1552125996f83bb73558192037cbca9888c26561",
+      "size_bytes": 5417
+    },
+    "frontend/src/components/ResultCard.css": {
+      "sha256": "7bb2744b94fd8a9e67204bbea0c456c397cef35f576358529261eed0c52c282d",
+      "size_bytes": 5146
+    },
+    "frontend/src/components/ResultCard.tsx": {
+      "sha256": "5937f487bc45e72a0c9ab582c001578392f76f6e6c02e9e78be728e4532b25d0",
+      "size_bytes": 5468
+    },
+    "frontend/src/components/StatusStates.css": {
+      "sha256": "b9f6865ca2d93ced1abb868a6d69e0157af647fabc95e2ed84e104ef811362ca",
+      "size_bytes": 2976
+    },
+    "frontend/src/context/BookmarkContext.tsx": {
+      "sha256": "14951d782fafca6486a83c473d3e87f19b407af8e5dc6c3d45e4e89c72cf99de",
+      "size_bytes": 3088
+    },
+    "frontend/src/pages/BookmarksPage.css": {
+      "sha256": "4d972897d5414960a9d1136a66097811233a64ab99aa0129e2161a10ac2a069f",
+      "size_bytes": 4165
+    },
+    "frontend/src/pages/BookmarksPage.tsx": {
+      "sha256": "f0859bae4e63c5885a695b34075cff6982060ae4a2aa6fbd0b25ec46bbe8f3d4",
+      "size_bytes": 3411
+    },
+    "frontend/src/pages/BrowsePage.css": {
+      "sha256": "fec1572d3d11bb33d3abd7c65e67a4b932188e81917f826fcca41db4ef0323e2",
+      "size_bytes": 8538
+    },
+    "frontend/src/pages/BrowsePage.tsx": {
+      "sha256": "128244da4c4f894659708ad0e396d06a3d17b48128ba8e210041f93e199fac5a",
+      "size_bytes": 16905
+    },
+    "frontend/src/pages/DetailPage.css": {
+      "sha256": "3bc036bea9a25cccbd282d469b167e62face6f4bb3828a98579b9a450ea845db",
+      "size_bytes": 5455
+    },
+    "frontend/src/pages/DetailPage.tsx": {
+      "sha256": "283aa1966479ae06b2c9a1d020834dd4243a2107548c8470525c1b0b4bbd8ea9",
+      "size_bytes": 5235
+    },
+    "frontend/src/pages/ExplorePage.css": {
+      "sha256": "05277f0ae8939c985750047f38a823bbd358a5594d9a465758997dba75ff5984",
+      "size_bytes": 4215
+    },
+    "frontend/src/pages/ExplorePage.tsx": {
+      "sha256": "48cddca50e8f268c36f74f7b661db0d12e8c32bf18af536b1786d845c5737557",
+      "size_bytes": 8006
+    },
+    "frontend/src/pages/HomePage.css": {
+      "sha256": "879328aaec3afc5f3f17ada8cefb2c4047295cfe53bf5ff692226d8cce64a095",
+      "size_bytes": 6829
+    },
+    "frontend/src/pages/HomePage.tsx": {
+      "sha256": "bf57a795b7a8ce16ccaf763f36f0b30f47b945403924b23f19302830548fe541",
+      "size_bytes": 5552
+    },
+    "frontend/src/pages/RandomPage.css": {
+      "sha256": "0975418e4a0dc1e343ace1066542f58b55fd36e0e0acb6dcd42b5c3ede8bf28e",
+      "size_bytes": 6267
+    },
+    "frontend/src/pages/RandomPage.tsx": {
+      "sha256": "3105b0e8f8926431c24b0fd1ab57dd8623c9a5766e0adea2fd44a94223cf06af",
+      "size_bytes": 7300
+    },
+    "frontend/src/pages/SearchResultsPage.css": {
+      "sha256": "1fce9a4f66512b2644ec0ddfa78a9b208634f55bc004d25142dad8791354b931",
+      "size_bytes": 3611
+    },
+    "frontend/src/pages/SearchResultsPage.tsx": {
+      "sha256": "226e7b834dc096ae9c5b9e785272e710d3a195f25730bb33c5d7fe61477563e5",
+      "size_bytes": 6962
+    },
+    "frontend/src/utils/poster.ts": {
+      "sha256": "78a6b6364fcbdd4db293be15caa77c0f62340afa48e013204e8db14e4ef175d5",
+      "size_bytes": 1882
+    }
+  }
+}
