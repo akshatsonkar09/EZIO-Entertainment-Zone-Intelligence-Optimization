@@ -1,5 +1,7 @@
 """
-Project Black Knight - AI-powered Entertainment Discovery & Connection Engine
+EZIO — Entertainment Zone Intelligence & Optimization
+AI-powered Search & Retrieval Engine for Movies, Anime, and Books.
+(Internal package name preserved for backward compatibility: project_black_knight)
 """
 
 from .query_schema import (
@@ -10,6 +12,8 @@ from .query_schema import (
     AnimeQuery,
     BookQuery,
 )
+
+EzioQuery = BlackKnightQuery
 from .query_parser import (
     parse_query,
     make_groq_strict_schema,
@@ -43,6 +47,8 @@ from .retrieval import (
     search_black_knight,
     tokenize_for_bm25,
 )
+
+search_ezio = search_black_knight
 from .diagnostics import (
     RetrievalTrace,
     TargetTrackingRecord,
@@ -84,10 +90,12 @@ __all__ = [
     "RetrievalTrace",
     "TargetTrackingRecord",
     "explain_filter_rejection",
+    "EzioQuery",
+    "search_ezio",
     "main",
 ]
 
 
 def main() -> None:
-    print("Project Black Knight - AI Entertainment Discovery Engine")
+    print("EZIO — Entertainment Zone Intelligence & Optimization")
 

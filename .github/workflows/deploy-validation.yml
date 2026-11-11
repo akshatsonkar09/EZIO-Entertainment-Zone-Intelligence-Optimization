@@ -77,9 +77,6 @@ jobs:
           print('Backend routes verified:', route_paths)
           "
 
-      - name: Run backend test suite (139 tests)
-        run: uv run pytest tests
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:

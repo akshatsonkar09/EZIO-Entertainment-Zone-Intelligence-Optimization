@@ -272,7 +272,7 @@ export const BrowsePage: React.FC = () => {
                 In the current verified local datasets (<code>movie_metadata_clean.csv</code>, <code>anime_metadata_clean.csv</code>, and <code>book_metadata_clean.csv</code>), {activeType === 'country' ? 'country origin' : activeType === 'language' ? 'original spoken/written language' : 'awards and honors'} is not indexed as a clean structured attribute.
               </p>
               <p className="audit-notice-sub">
-                To prevent returning ungrounded or synthetic records, Project Black Knight filters exclusively on verified attributes. You can browse through our indexed categories below:
+                To prevent returning ungrounded or synthetic records, EZIO filters exclusively on verified attributes. You can browse through our indexed categories below:
               </p>
               <div className="audit-suggested-actions">
                 <button

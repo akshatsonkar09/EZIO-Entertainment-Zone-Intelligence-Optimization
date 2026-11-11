@@ -12,7 +12,7 @@ _client: Groq | None = None
 
 
 def get_groq_client(api_key: str | None = None) -> Groq:
-    """Return a Groq client instance, loading from environment if not provided."""
+    """Return a Groq client instance, loading from environment or .env file."""
     global _client
     if api_key:
         return Groq(api_key=api_key)
@@ -20,9 +20,9 @@ def get_groq_client(api_key: str | None = None) -> Groq:
         return _client
     load_dotenv()
     env_key = os.getenv("GROQ_API_KEY")
-    if not env_key:
+    if not env_key or not env_key.strip():
         raise RuntimeError("GROQ_API_KEY is not set. Please set the environment variable or pass a client.")
-    _client = Groq(api_key=env_key)
+    _client = Groq(api_key=env_key.strip())
     return _client
 
 

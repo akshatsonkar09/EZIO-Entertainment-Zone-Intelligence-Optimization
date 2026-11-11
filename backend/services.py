@@ -1,5 +1,5 @@
 """
-Backend service and adapter layer for Project Black Knight.
+Backend service and adapter layer for EZIO — Entertainment Zone Intelligence & Optimization.
 Integrates FastAPI endpoints directly with the existing retrieval pipeline,
 metadata filters, and catalog datasets without altering core algorithms.
 """

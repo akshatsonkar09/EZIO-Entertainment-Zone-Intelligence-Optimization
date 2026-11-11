@@ -108,11 +108,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRandom }) => {
     <header className="site-header" role="banner">
       <div className="header-inner">
         {/* Left: Brand Logo */}
-        <Link to="/" className="brand-link" aria-label="Project Black Knight">
+        <Link to="/" className="brand-link" aria-label="EZIO">
           <div className="brand-logo-icon">
             <Star size={16} fill="#ffffff" color="#ffffff" />
           </div>
-          <span className="brand-text">PROJECT BLACK KNIGHT</span>
+          <span className="brand-text">EZIO</span>
         </Link>
 
         {/* Center: Main Navigation */}

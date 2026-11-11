@@ -1,38 +1,42 @@
 {
   "generated_at": "Project Black Knight Workspace",
-  "total_files": 98,
+  "total_files": 86,
   "files": {
     "backend/__init__.py": {
-      "sha256": "2b7fbe6b5cbf261bfd1ce3b54c4fd2d3ec684da85db9400af7e05f88531ca175",
-      "size_bytes": 52
+      "sha256": "3fa99bee6d248eec67935625de3856a9f33bbe18ef57e2f9164f3a585f62b18e",
+      "size_bytes": 53
     },
     "backend/main.py": {
-      "sha256": "4a1488c462703cce5a8d8ed6dcfe2b2bba4244150915c72d10bc1286fd8a42d9",
-      "size_bytes": 5729
+      "sha256": "377307b982bd89b4e09384fec3c0e6b2d7f49dcd80d0475bd45da310e52c4132",
+      "size_bytes": 8239
     },
     "backend/schemas.py": {
       "sha256": "5205e250e2ea8097a9546087d2748d6f122bbb958e629631c06dbfee6c5e01dc",
       "size_bytes": 1530
     },
     "backend/services.py": {
-      "sha256": "2a5731b1d01b3f06ea110886e7f7fb9f08e251c26dced99a42b85c02aa7e06bf",
-      "size_bytes": 17239
+      "sha256": "a40665f5a765e0733dfc229ce27c015d0fe0eda8205e4da69ff88fb86f9a145c",
+      "size_bytes": 18211
     },
     "src/__init__.py": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "size_bytes": 0
     },
+    "src/ezio/__init__.py": {
+      "sha256": "c9cffb4d3f1bb1129f0126a4dccf12bf4572426a6789e5374c728c849e29be00",
+      "size_bytes": 433
+    },
     "src/query_schema.py": {
-      "sha256": "b089bc369ee32c7ae1d0e57a1ce2b99b431136e99dc2e686f07d39dfde163806",
-      "size_bytes": 1601
+      "sha256": "39df669456707e0478b0a095602d44937bc4ccee76c21f98fc3ca0bacfa0de79",
+      "size_bytes": 1663
     },
     "src/text_normalizer.py": {
       "sha256": "8446e3a706774492836c57bba88a22a21355681599966b4a5c0bdd7bc38184fa",
       "size_bytes": 712
     },
     "src/project_black_knight/__init__.py": {
-      "sha256": "0202f9e3878a7d9c25a688da6a08447595738fcaa38a3e6f0e02679a1e26a2fb",
-      "size_bytes": 1922
+      "sha256": "e2bf59278a4cba37a58d9e4d0c5bc7dcf283d70caa304f5f50ee241e6d6f3292",
+      "size_bytes": 2150
     },
     "src/project_black_knight/diagnostics.py": {
       "sha256": "432ce26e86e1d4b0096bddd075459e6425ccf642ce73d0088b6728b224724a6e",
@@ -47,12 +51,12 @@
       "size_bytes": 6239
     },
     "src/project_black_knight/query_schema.py": {
-      "sha256": "a614a9a82d0b0026e46bbe3ea84748ccd5fae193b31de6c87e702b8b0ac6b0a7",
-      "size_bytes": 1537
+      "sha256": "79383c07bcdf64caef0efbe1dd05a74bdfdadfaf8376d463b10474e2f0b33bbb",
+      "size_bytes": 1595
     },
     "src/project_black_knight/retrieval.py": {
-      "sha256": "773d2f8dd0bed84169d234ce2eb21f0bc84512c88c2915fe8638cdf6504f27e2",
-      "size_bytes": 42785
+      "sha256": "ec4d83a47771d2de5c6ea98b10b894044d91e1eb325e83eb9811f117a5394d6e",
+      "size_bytes": 42949
     },
     "src/project_black_knight/text_normalizer.py": {
       "sha256": "e4e0f41cce43d164130622677b4ed4630bef024dc6890dd6746e9c0755017510",
@@ -107,12 +111,16 @@
       "size_bytes": 17249408
     },
     "scripts/build_chroma_index.py": {
-      "sha256": "b12d8110237e9606cd2573d7196ea0d5bef7441a24d30b8700eb64968846182a",
-      "size_bytes": 7339
+      "sha256": "c621f7a3c6ba79fd6bf611601712c6e998153c0cb2e75d76077d8b289dfbef4a",
+      "size_bytes": 7340
+    },
+    "scripts/preload_models.py": {
+      "sha256": "9fc6e29ae33fbb208a3296c4af45d9e2574fd6dee0b9203037aa7bf328b56e6f",
+      "size_bytes": 2204
     },
     "evaluation/__init__.py": {
-      "sha256": "ee1f781b3b6349a1fb676b37cb562123ad9c15b4186c54b3c93f0d65da9a4ccb",
-      "size_bytes": 47
+      "sha256": "d4f8bfb763078cc2ad2f501239f86145e3a1841053801e7900e442d3534ac950",
+      "size_bytes": 48
     },
     "evaluation/run_evaluation.py": {
       "sha256": "8b55c4cc110e071020226fd5e2518ed72449fdd40bb3653591e6d1e59b6266da",
@@ -122,65 +130,9 @@
       "sha256": "93df8574ab0a54babd5bacc7c62a34940eab39fe21e55d3faa95851a8ea03ab4",
       "size_bytes": 228615
     },
-    "tests/test_anime_deduplication.py": {
-      "sha256": "fa7bca66ba1f78d2b4f8bf3d9abd61dcba20764a9dd2f354e359d2f147d978dc",
-      "size_bytes": 4651
-    },
-    "tests/test_backend_api.py": {
-      "sha256": "6079b67750fe5fd3283980b0b2d2fc7238f64e24f819a277bc7698414c3fceda",
-      "size_bytes": 3816
-    },
-    "tests/test_datasets.py": {
-      "sha256": "424484f2000905d469b61de50056f3d0b2075f89e78bb7831cc7d66a48029ccd",
-      "size_bytes": 2012
-    },
-    "tests/test_exact_title_promotion.py": {
-      "sha256": "28cf83b96021ee24eba3fbdd66f1ec9cf90ef29c32f3c4e07de87083ebc89f17",
-      "size_bytes": 3290
-    },
-    "tests/test_genre_canonicalization.py": {
-      "sha256": "74906cb13b37daea4a5d652186208b8432d81a40fca7d111d5af20c2b4e3475b",
-      "size_bytes": 23126
-    },
-    "tests/test_hard_filter_correctness.py": {
-      "sha256": "cf90763ba364f0279096d96c457e7205463b04d24f73238787e40f170095491f",
-      "size_bytes": 18232
-    },
-    "tests/test_hybrid_retrieval.py": {
-      "sha256": "8ffd730f16a76a4e45729d13d2911dfe37f1ebac050cf2aa7b09fab6a2854a83",
-      "size_bytes": 23684
-    },
-    "tests/test_metadata_filtering.py": {
-      "sha256": "58fb8d261ed0dced511bf4c005a0cd8fef7252291c29fd706db36a80811b14e4",
-      "size_bytes": 14833
-    },
-    "tests/test_music_removal.py": {
-      "sha256": "e8dde2ed76f588c6e43c0c350452ca51bfd22813f8663ee2cdbb7de91c236e00",
-      "size_bytes": 7186
-    },
-    "tests/test_parser_evaluation.py": {
-      "sha256": "8e1b336a2c3ec309cfb4e4508952986623991e198ab0fe9e63c7f07f4768340a",
-      "size_bytes": 10359
-    },
-    "tests/test_query_parser.py": {
-      "sha256": "dc9acfde513767df65325e5ff92693d9b17016a2b5d61e222f64c298bcb71fb1",
-      "size_bytes": 770
-    },
-    "tests/test_query_schema.py": {
-      "sha256": "2347b221214b72f162f47bfb4bb04940e5e78716722283813527cf90581e4cf8",
-      "size_bytes": 1959
-    },
-    "tests/test_retrieval_diagnostics.py": {
-      "sha256": "1f6c24229cc16d6bca35ff8a63f3c903971f421dd52f42830a7c6c36678733a1",
-      "size_bytes": 8399
-    },
-    "tests/test_text_normalizer.py": {
-      "sha256": "3770889eb4063782b55b899b0e27ad061e3e46fa0da4d6b0167fb7454df9ac3c",
-      "size_bytes": 3325
-    },
     "pyproject.toml": {
-      "sha256": "279cf40e450c8a9833f758a50524e481bbf3e619bd25b72619ce55958d2cbcfa",
-      "size_bytes": 938
+      "sha256": "792e7dd051dc23b56f130bd6429fcfd6ad9362e8532efbc3f82c031c57a96828",
+      "size_bytes": 979
     },
     "requirements.txt": {
       "sha256": "5ad6409ae965831605848b8b0172151ba3808a8b8f427bc0679bc886a12cd3c6",
@@ -191,16 +143,16 @@
       "size_bytes": 1091
     },
     ".env.example": {
-      "sha256": "9d5ba363b796139b1c1996c0524a6bbf324b1ebed44cbcc8bf7876344abdc423",
-      "size_bytes": 723
+      "sha256": "48051756cd0e8986fff81fd139082b8532a8dc75fbaa3752ab336cf3f7d32aab",
+      "size_bytes": 724
     },
     "frontend/.oxlintrc.json": {
       "sha256": "b4d344818a1e1bf43997e4744a9153c8eef770c98b58229cd86363dabb85ded4",
       "size_bytes": 245
     },
     "frontend/index.html": {
-      "sha256": "d5783121347fa8083c4ba15f6f5ed989dbf1d6badc4c6887406ef6cb1c72293a",
-      "size_bytes": 933
+      "sha256": "22dc3752dccd7b91eafdb559496e39466c8e36e28af34456c963a74ce4c61f1a",
+      "size_bytes": 935
     },
     "frontend/package.json": {
       "sha256": "41dcb09fcaf8074b2a4c04db93b420fb87bd43b42e68bf390e0a8181f497d748",
@@ -303,8 +255,8 @@
       "size_bytes": 10092
     },
     "frontend/src/components/Navbar.tsx": {
-      "sha256": "56ff1fa522476c0242518b174c38dc6d50f088cde4cd39bf13c7af44df1f2a42",
-      "size_bytes": 14982
+      "sha256": "b620b850048362fb9cbd13999fbf9fee175c343c693e65fc433c51877c2be8ea",
+      "size_bytes": 14950
     },
     "frontend/src/components/NoResults.tsx": {
       "sha256": "c3c3ecc792df4414c1cec28ceec146bf0c140c39a3cb44d0c0743ceb9030c352",
@@ -347,8 +299,8 @@
       "size_bytes": 8538
     },
     "frontend/src/pages/BrowsePage.tsx": {
-      "sha256": "128244da4c4f894659708ad0e396d06a3d17b48128ba8e210041f93e199fac5a",
-      "size_bytes": 16905
+      "sha256": "449a688519d6feb87bb0cec60e17eebdfadb1e77d255754d28312fc8a80ce2b4",
+      "size_bytes": 16889
     },
     "frontend/src/pages/DetailPage.css": {
       "sha256": "3bc036bea9a25cccbd282d469b167e62face6f4bb3828a98579b9a450ea845db",

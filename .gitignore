@@ -14,16 +14,17 @@ venv/
 env/
 ENV/
 
-# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+# Environment Configuration
 .env
 .env.*
 !.env.example
-!.env.template
+
 
 # Testing & Code Quality
 .pytest_cache/
 .coverage
 htmlcov/
+desktop.ini
 
 # Node & Frontend
 node_modules/

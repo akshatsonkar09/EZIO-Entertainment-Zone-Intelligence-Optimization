@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: project-black-knight-backend
+    name: ezio-backend
     runtime: python
     plan: standard
     buildCommand: "pip install -r requirements.txt && python scripts/build_chroma_index.py && python scripts/preload_models.py"

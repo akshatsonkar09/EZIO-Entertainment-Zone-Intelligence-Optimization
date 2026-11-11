@@ -1,14 +1,15 @@
 """
-Hybrid Retrieval and Recommendation Engine for Project Black Knight (Phase 4).
+Hybrid Retrieval and Search Engine for EZIO — Entertainment Zone Intelligence & Optimization.
 
 Features:
 - Dense retrieval with SentenceTransformers and persistent ChromaDB collections
 - BM25 lexical retrieval using rank_bm25 with regex tokenization
 - Reciprocal Rank Fusion (RRF) with deterministic tie-breaking
 - Neural cross-encoder reranking with cross-encoder/ms-marco-MiniLM-L-6-v2
-- Phase 3 metadata filtering integration (get_valid_ids)
+- Metadata filtering integration (get_valid_ids)
 - Similar-item seed resolution and reference self-exclusion
-- Cross-domain multi-media recommendations without filter leakage
+- Multi-domain search across movies, anime, and books without filter leakage
+- Exact-title match promotion with zero overhead pre-normalized hash tables
 - Comprehensive stage-level diagnostics and latency measurement
 """
 
@@ -39,14 +40,6 @@ PROJECT_ROOT = PACKAGE_DIR.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 CHROMA_DIR = DATA_DIR / "chroma"
-
-
-def get_model_cache_dir() -> str:
-    """Resolve shared model cache directory across preload and runtime retrieval."""
-    env_dir = os.getenv("HF_HOME") or os.getenv("MODEL_CACHE_DIR")
-    if env_dir and env_dir.strip():
-        return str(Path(env_dir.strip()).resolve())
-    return str((PROJECT_ROOT / "data" / "models").resolve())
 
 SUPPORTED_DOMAINS = ("movie", "anime", "book")
 
@@ -84,8 +77,7 @@ class RetrievalRepository:
     def __init__(self, data_dir: Path = DATA_DIR):
         self.data_dir = data_dir
         self.processed_dir = data_dir / "processed"
-        persist_env = os.getenv("CHROMA_PERSIST_DIR")
-        self.chroma_dir = Path(persist_env).resolve() if persist_env else (data_dir / "chroma")
+        self.chroma_dir = data_dir / "chroma"
 
         self._metadata_dfs: dict[str, pd.DataFrame] = {}
         self._document_texts: dict[str, list[str]] = {}
@@ -181,28 +173,22 @@ class RetrievalRepository:
         """Return lazy-loaded SentenceTransformer embedding model."""
         if self._embedding_model is None:
             from sentence_transformers import SentenceTransformer
-            cache_dir = get_model_cache_dir()
-            try:
-                self._embedding_model = SentenceTransformer("all-MiniLM-L6-v2", cache_folder=cache_dir)
-            except Exception as exc:
-                raise RuntimeError(
-                    f"Failed to load SentenceTransformer model 'all-MiniLM-L6-v2' from cache '{cache_dir}': {exc}. "
-                    "Ensure models are preloaded using 'python scripts/preload_models.py' during build."
-                ) from exc
+            models_dir = os.environ.get("HF_HOME") or str(self.data_dir / "models")
+            if Path(models_dir).is_dir():
+                self._embedding_model = SentenceTransformer("all-MiniLM-L6-v2", cache_folder=models_dir)
+            else:
+                self._embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
         return self._embedding_model
 
     def get_reranker_model(self):
         """Return lazy-loaded CrossEncoder reranking model."""
         if self._reranker_model is None:
             from sentence_transformers import CrossEncoder
-            cache_dir = get_model_cache_dir()
-            try:
-                self._reranker_model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2", cache_folder=cache_dir)
-            except Exception as exc:
-                raise RuntimeError(
-                    f"Failed to load CrossEncoder model 'cross-encoder/ms-marco-MiniLM-L-6-v2' from cache '{cache_dir}': {exc}. "
-                    "Ensure models are preloaded using 'python scripts/preload_models.py' during build."
-                ) from exc
+            models_dir = os.environ.get("HF_HOME") or str(self.data_dir / "models")
+            if Path(models_dir).is_dir():
+                self._reranker_model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2", cache_folder=models_dir)
+            else:
+                self._reranker_model = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
         return self._reranker_model
 
 
@@ -1080,4 +1066,8 @@ def search_black_knight(
         response["diagnostics"] = diag_dict
 
     return response
+
+
+# Rebranded alias for EZIO
+search_ezio = search_black_knight
 

@@ -205,3 +205,4 @@ if __name__ == "__main__":
 
     target_dir = Path(args.data_dir).resolve() if args.data_dir else None
     ensure_chroma_indexes(target_dir, force_rebuild=args.force)
+

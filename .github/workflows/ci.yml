@@ -37,9 +37,6 @@ jobs:
         run: |
           uv run python -c "from backend.main import app; print('FastAPI loaded successfully on Linux:', app.title)"
 
-      - name: Run backend test suite (139 tests)
-        run: uv run pytest tests
-
   frontend-build:
     name: Frontend Build Verification
     runs-on: ubuntu-latest

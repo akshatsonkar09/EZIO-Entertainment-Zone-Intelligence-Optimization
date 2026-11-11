@@ -64,3 +64,7 @@ class BlackKnightQuery(BaseModel):
     semantic_query: str
 
     similar_to: list[str] = Field(default_factory=list)
+
+
+# Rebranded alias for EZIO
+EzioQuery = BlackKnightQuery

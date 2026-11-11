@@ -1,5 +1,5 @@
 """
-FastAPI application for Project Black Knight.
+FastAPI application for EZIO — Entertainment Zone Intelligence & Optimization.
 Exposes clean, RESTful JSON endpoints for search, item retrieval,
 random discovery, and metadata-driven browsing.
 """
@@ -29,12 +29,12 @@ from .services import (
     search_content,
 )
 
-logger = logging.getLogger("project_black_knight")
+logger = logging.getLogger("ezio")
 logging.basicConfig(level=logging.INFO)
 
 app = FastAPI(
-    title="Project Black Knight API",
-    description="Intelligent search and retrieval engine for movies, anime, and books.",
+    title="EZIO API",
+    description="EZIO — Entertainment Zone Intelligence & Optimization: AI-powered search and retrieval engine for movies, anime, and books.",
     version="0.1.0",
 )
 
@@ -70,6 +70,7 @@ def get_allowed_origins() -> list[str]:
         "http://127.0.0.1:5173",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "*",
     ]
     if env_origins:
         custom_origins = [o.strip() for o in env_origins.split(",") if o.strip()]
@@ -77,12 +78,12 @@ def get_allowed_origins() -> list[str]:
     return default_dev_origins
 
 
-# Enable CORS (credentials=False per CORS specification when using wildcards or cross-domain hosting)
+# Enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=get_allowed_origins(),
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
@@ -93,7 +94,7 @@ def liveness_check():
     """Verify backend process liveness."""
     return {
         "status": "ok",
-        "service": "Project Black Knight API",
+        "service": "EZIO API",
         "version": "0.1.0",
     }
 
@@ -114,7 +115,7 @@ def readiness_check():
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             content={
                 "status": "not_ready",
-                "service": "Project Black Knight API",
+                "service": "EZIO API",
                 "version": "0.1.0",
                 "detail": details,
             },
@@ -122,7 +123,7 @@ def readiness_check():
     return {
         "status": "ok",
         "ready": True,
-        "service": "Project Black Knight API",
+        "service": "EZIO API",
         "version": "0.1.0",
         "collections": details,
     }
